@@ -9,4 +9,12 @@ categories: jekyll
     - Jekyll을 선택한 이유는 가장 많이 사용되어 참고할 자료들이 많아 선택함.
     - Theme가 많아서 자주 바꿀 수 있을 것 같다.
 
+# Github Repository 만들기
+- `username.github.io` 형태로 만들어야합니다.
+    - `username`은 자신의 아이디를 넣어 만들어야합니다. (ex `akageun.github.io`)
+
+# Jekyll로 블로그 만들기
+- [Jekyll Theme Chooser](https://help.github.com/en/articles/about-github-pages-and-jekyll)
+## 
+
 <!-- ![My Icon](/static/img/posts/IMG_4475_2.jpeg) -->
