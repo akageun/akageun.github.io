@@ -2,9 +2,9 @@ title: Dev Blog
 description: Development Blog
 author: akageun
 github: https://github.com/akageun
-about: I'm Programmer for Python & Django. I've made quite a few web apps, especially on Django.
+#about: I'm Programmer for Python & Django. I've made quite a few web apps, especially on Django.
 #disqus_shortname: stackproblems
-#google_analytics: UA-XXXXXXXX-Y
+google_analytics: UA-141840466-1
 avatar_url: /static/img/avatar.jpg
 
 enableTags: true
