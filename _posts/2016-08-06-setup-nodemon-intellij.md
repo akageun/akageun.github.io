@@ -2,9 +2,13 @@
 layout: post
 title:  "[Intelli J] NodeMon 설정하기 (Mac OS)"
 date:   2016-08-06 00:00:00 +0900
+categories:
+ - node
+tags: 
+ - javascript
 ---
 
-#1. nodemon install
+# 1. nodemon install
  - 멍령어 : sudo npm install -g nodemon
 
 # 2. 설정 path 확인

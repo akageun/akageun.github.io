@@ -2,6 +2,10 @@
 layout: post
 title:  "[nginx] nginx conf 파일 내 다중 if 조건"
 date:   2018-01-13 00:00:00 +0900
+categories:
+ - webserver
+tags: 
+ - nginx
 ---
 
 - nginx conf 파일 내에 다중 if문 조건을 넣고싶다. 허나 nginx에서는 다중 조건 if문 사용이 안된다.

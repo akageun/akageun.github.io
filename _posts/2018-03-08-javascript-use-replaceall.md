@@ -2,10 +2,14 @@
 layout: post
 title:  "Javascript replaceAll 사용하기"
 date:   2018-03-08 00:00:00 +0900
-#categories: ["nginx", "deployment"]
+categories:
+ - javascript
+tags: 
+ - javascript
 ---
 
 - 자바스크립트에서는 replaceAll이 없다. 그래서 다른 방법으로 사용해야한다.
+
 # 1. 기존 replace
 
 ```javascript
@@ -16,6 +20,7 @@ console.log("replaceStr : ", replaceStr);
 
 - 결과값
     - 첫번째 조건만 변경하고 멈춘다.
+    
 > replaceStr :  Test : Sample TEST text
 
 # 2. replaceAll 사용하기
@@ -38,9 +43,10 @@ var protoTypeTestStr = "TEST : Sample TEST text";
 var protoTypeTestRtnStr = protoTypeTestStr.replaceAll("TEST", "Test");
 console.log("protoTypeTestRtnStr : ", protoTypeTestRtnStr);
 ```
-- 결과값
-> protoTypeTestRtnStr :  Test : Sample Test text
 
+- 결과값
+
+> protoTypeTestRtnStr :  Test : Sample Test text
 
 #### 정규식을 활용
 - 변경하려는 값과 같은 것만(g 값을 사용)
@@ -87,6 +93,7 @@ console.log("regexProtoTestRtnStr : ", regexProtoTestRtnStr);
 ```
 
 - 결과
+
 > regexProtoTestRtnStr :  Test : Sample Test text
 
 # 4. 전체소스

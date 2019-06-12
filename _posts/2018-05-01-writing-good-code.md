@@ -2,7 +2,10 @@
 layout: post
 title:  "좋은 코드 작성하기."
 date:   2018-05-01 00:00:00 +0900
-#categories: ["nginx", "deployment"]
+#categories:
+# - 
+#tags: 
+# - 
 ---
 
 - 개인적으로 개발을 하면서 좋은 코드를 작성하는 법을 고민하며, 작성한 글입니다. 

@@ -2,7 +2,10 @@
 layout: post
 title:  "NGINX 활용한 무중단 배포! 자동화 삽질기."
 date:   2018-07-03 00:00:00 +0900
-#categories: ["nginx", "deployment"]
+categories:
+ - nginx
+tags: 
+ - nginx
 ---
 
 - 개인 프로젝트에서 nginx를 웹서버로 사용하고 있다. 그 뒤에는 2대의 WAS를 사용하고 있고, nginx upstream 기능을 사용하여 로드 밸런싱을 했다. 그러다 보니 배포시에 아래 upstream 내 server를 주석처리하고 nginx 를 reload 하고 다 배포하고 또 주석 처리하고 nginx reload하고.... 다 처리하고 다시 reload하고... 휴.... 반복 해야 한다. 
