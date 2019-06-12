@@ -2,6 +2,12 @@
 layout: post
 title:  "VirtualBox install"
 date:   2019-05-03 00:00:00 +0900
+categories:
+ - vm
+tags: 
+ - virtualbox
+ - centos
+ - linux
 ---
 
 # 설치 전 준비
