@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://akageun.github.io/sitemap.xml
