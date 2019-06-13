@@ -28,17 +28,7 @@ plugins: [
   jekyll-paginate,
   jekyll-gist
 ]
-# Tag setting
-#collections:
-#  tags:
-#    output: true
-#    permalink: /tags/:path/
-#defaults:
-#  - scope:
-#      path: ''
-#      type: tags
-#    values:
-#      layout: tag
+
 google_analytics:
   ua: 'UA-141840466-1'
 github:
@@ -48,3 +38,6 @@ category_dir: category/
 tag_dir: tag/
 
 paginate_path: "/page/:num/"
+disqus_shortname: akageun-github-io
+
+total_page: 3
