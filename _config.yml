@@ -12,6 +12,8 @@ url:                 https://akageun.github.com
 baseurl:             ''
 paginate:            5
 
+avatar_url: /assets/image/IMG_4475.jpg
+
 # About/contact
 author:
   name:              Geun
