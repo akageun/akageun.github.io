@@ -2,6 +2,11 @@
 layout: post
 title:  "[ElasticSearch] Nori 를 사용한 형태소 분석"
 date:   2018-10-22 00:00:00 +0900
+categories:
+ - elastic
+tags: 
+ - elasticsearch
+ - nori
 ---
 
 # 1. nori 란?

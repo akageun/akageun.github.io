@@ -1,46 +1,43 @@
-title: Dev Blog
-description: Development Blog
-author: akageun
-github: https://github.com/akageun
-#about: I'm Programmer for Python & Django. I've made quite a few web apps, especially on Django.
-#disqus_shortname: stackproblems
-google_analytics: UA-141840466-1
-avatar_url: /static/img/avatar.jpg
 
-enableTags: true
-tagarray: []
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+#relative_permalinks: true
 
-collections:
-  project:
-    output: true
-    permalink: /project/:path/
+# Setup
+title:               오늘도 개발자
+tagline:             'Backend Developer'
+description:         '언제나 개발하기를 즐기는 개발자 입니다.'
+url:                 https://akageun.github.com
+baseurl:             ''
+paginate:            5
 
-social:
-    - icon: fa-github
-      link: "https://github.com/akageun"
-urls:
-    - text: About Me
-      url: /about/
-    # - text: My Projects
-    #   url: /projects/
-    - text: XML Feed
-      url: /feed.xml
+avatar_url: /assets/image/IMG_4475.jpg
 
-url: "https://akageun.github.io"
-baseurl: ""
-paginate: 20 #페이지 당 보여질 글 수
-per_page: 20
+# About/contact
+author:
+  name:              Geun
+  url:               https://akageun.github.com
+  email:             akageun@gmail.com
+
+# Custom vars
+version:             0.0.1
+
+plugins: [
+  jekyll-paginate,
+  jekyll-gist
+]
+
+google_analytics:
+  ua: 'UA-141840466-1'
+github:
+  repo: 'https://github.com/akageun'
+
+category_dir: category/
+tag_dir: tag/
+
 paginate_path: "/page/:num/"
-markdown: kramdown
-gems:
-  - jekyll-paginate
-  - jekyll-gist
+disqus_shortname: akageun-github-io
 
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
-  ignore:
-    envs: ['development']
-
-
+total_page: 3

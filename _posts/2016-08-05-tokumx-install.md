@@ -2,6 +2,11 @@
 layout: post
 title:  "Mongo 설치하기(Tokumx 설치하기)"
 date:   2016-08-05 00:00:00 +0900
+categories:
+ - database
+tags: 
+ - mongodb
+ - install
 ---
 
 # 1. download

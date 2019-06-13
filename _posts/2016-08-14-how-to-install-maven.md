@@ -2,6 +2,11 @@
 layout: post
 title:  "Maven Install"
 date:   2016-08-14 00:00:00 +0900
+categories:
+ - maven
+tags: 
+ - java
+ - maven
 ---
 
 # 1. 설치확인

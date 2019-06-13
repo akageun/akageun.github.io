@@ -2,9 +2,14 @@
 layout: post
 title:  "URL IMAGE DOWNLOAD"
 date:   2018-08-14 00:00:00 +0900
+categories:
+ - java
+tags: 
+ - java
 ---
 
 # 1. ImageIO 를 활용해서 이미지 다운로드
+- 간단하게 URL을 호출해서 이미지를 로컬에 다운받을 수 있다.
 
 ```java
 String imgUrl = "http://img.naver.net/static/www/u/2013/0731/nmms_224940510.gif"; //Image URL
