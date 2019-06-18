@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Myql 원격접속하기."
+title:  "Mysql 원격접속하기."
 date:   2018-08-24 00:00:00 +0900
 categories:
  - mysql
