@@ -3,10 +3,11 @@ layout: post
 title:  "Webserver 'nginx' install on Centos 6.5"
 date:   2016-08-14 00:00:00 +0900
 categories:
- - nginx
+ - webserver
 tags: 
  - linux
  - install
+ - nginx
 ---
 
 # 1. yum repo 설정

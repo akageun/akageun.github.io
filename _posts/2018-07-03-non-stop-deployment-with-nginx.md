@@ -3,7 +3,7 @@ layout: post
 title:  "NGINX 활용한 무중단 배포! 자동화 삽질기."
 date:   2018-07-03 00:00:00 +0900
 categories:
- - nginx
+ - webserver
 tags: 
  - nginx
 ---
