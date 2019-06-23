@@ -2,6 +2,10 @@
 layout: post
 title:  "[Spring Async] 1. 비동기 처리를 해보자."
 date:   2019-06-05 00:00:00 +0900
+categories:
+ - spring
+tags: 
+ - async
 ---
 
 - Spring에서 제공해주는 @Async Annotation을 사용하여 비동기처리를 한다.
@@ -23,18 +27,6 @@ public void run() {
 - 리턴값은 void와 java.util.concurrent.Future<V>만 사용가능하다.
 - public 메소드만 사용 가능하다.
 - 스스로를 호출하여 동작시킬 수 없다.(self-invocation)
-
-
-
-#### 리턴값이 정해져 있다.
-
-###### void
-
-###### java.util.concurrent.Future<V>
-
-#### 스스로를 호출하여 동작시킬 수 없다.
-
-#### 같은 클래스에서 
 
 # 설정하기
 - Spring Boot 기준으로 설명할 예정.
@@ -120,24 +112,11 @@ public Executor taskExecutor_2() {
 ```java
 @Async("taskExecutor_1")
 public void taskExecutor1() {
-    log.info("thread 1 run");
+    log.info("thread name : {} ", Thread.currentThread().getName());
 }
 
 @Async("taskExecutor_2")
 public void taskExecutor2() {
-    log.info("thread 2 run");
+    log.info("thread name : {} ", Thread.currentThread().getName());
 }
 ```
-
-#### Excutor 설정 중 ThreadPoolExecutor 관련
-###### ThreadPoolExecutor.AbortPolicy
-- A handler for rejected tasks that throws a RejectedExecutionException
-
-###### ThreadPoolExecutor.CallerRunsPolicy
-- A handler for rejected tasks that runs the rejected task directly in the calling thread of the execute method, unless the executor has been shut down, in which case the task is discarded.
-
-###### ThreadPoolExecutor.DiscardPolicy
-- A handler for rejected tasks that silently discards the rejected task.
-
-###### ThreadPoolExecutor.DiscardOldestPolicy
-- A handler for rejected tasks that discards the oldest unhandled request and then retries execute, unless the executor is shut down, in which case the task is discarded.
