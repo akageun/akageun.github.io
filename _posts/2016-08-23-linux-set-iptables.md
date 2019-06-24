@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Centos 방화벽 설정"
-date:   2018-08-23 00:00:00 +0900
+date:   2016-08-23 00:00:00 +0900
 categories:
  - linux
 tags: 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Nodeclipse] Eclipsed에서 Node.js 개발하기"
-date:   2018-08-20 00:00:00 +0900
+date:   2016-08-20 00:00:00 +0900
 categories:
  - tools
 tags: 
