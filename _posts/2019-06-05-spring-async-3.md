@@ -7,7 +7,9 @@ categories:
 tags: 
  - async
 ---
+
 - 아래와 같이 `void`로 리턴값이 없어야 비동기로 호출 할 수 있다.
+
 ```java
 @Async
 public void asyncRun() {
