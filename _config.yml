@@ -11,7 +11,7 @@ tagline:             'Backend Developer'
 description:         '언제나 개발하기를 즐기는 개발자 입니다.'
 url:                 https://akageun.github.io
 baseurl:             ''
-paginate:            5
+paginate:            10
 
 avatar_url: /assets/image/IMG_3426_new.jpg
 

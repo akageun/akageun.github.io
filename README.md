@@ -8,6 +8,6 @@
 
 > bundle install
 
--실행
+- 실행
 
 > bundle exec jekyll serve
