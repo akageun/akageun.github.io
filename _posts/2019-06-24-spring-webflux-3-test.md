@@ -35,6 +35,7 @@ public class ExampleRouterTest {
 ```
 
 ## Publisher 테스트 해보기(StepVerifier)
+- `StepVerifier`는 Mono/Flux를 Test하기 위한 도구 입니다.
 
 ###### verifyComplete();
 > expectComplete().verify();  와 같은 로직
