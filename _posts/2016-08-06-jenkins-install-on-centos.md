@@ -19,7 +19,7 @@ tags:
 - 1) sudo wget -O /etc/yum.repos.d/jenkins.repo   http://jenkins-ci.org/redhat/jenkins.repo
 - 2) sudo  rpm --import http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key
 - 3) sudo yum install jenkins
-- 4) /etc/init.d/jenkins start | stop | restart
+- 4) /etc/init.d/jenkins `start` or `stop` or `restart`
 - 5) chkconfig jenkins on (부팅시 자동실행, 필요시에만 사용할 것~)
  
 ## 3. Config 수정
