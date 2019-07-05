@@ -31,6 +31,7 @@ logging:
 
 ## WebClient Timeout 설정
 - 설정코드 
+
 ```java
 private WebClient getWebclient(int connectionTimeout, int readTimeout, int writeTimeout) {
 	TcpClient tcpClient = TcpClient.create()
@@ -46,6 +47,7 @@ private WebClient getWebclient(int connectionTimeout, int readTimeout, int write
 ```
 
 - Test code
+
 ```java
 @Test(expected = io.netty.channel.ConnectTimeoutException.class)
 public void connectionTimeoutTest() {
@@ -69,6 +71,7 @@ public void readTimeoutTest() {
 ```
 
 #### Spring에서 Bean으로 사용할 경우 
+
 ```java
 @Bean
 public WebClient poolWebClient(
@@ -84,6 +87,7 @@ public WebClient poolWebClient(
 	return WebClient.builder().clientConnector(connector).build();
 }
 ```
+
 ---
 ## 참고링크
 - https://docs.spring.io/spring/docs/5.1.6.RELEASE/spring-framework-reference/web-reactive.html#webflux-client-builder-reactor-timeout

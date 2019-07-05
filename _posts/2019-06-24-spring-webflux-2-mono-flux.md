@@ -58,7 +58,9 @@ public void test() {
 		.subscribe();
 }
 ```
+
     - 결과
+    
 ```
 xxx.FluxTestCase - doOnNext : 1 
 xxx.FluxTestCase - doOnNext : 2 
@@ -67,10 +69,13 @@ xxx.FluxTestCase - doOnNext : 3
 
 ###### empty()
 > Flux<String> data = Flux.empty();
+
 ###### just()
 > Flux<String> data = Flux.just("", "");
+
 ###### range()
 > Flux.range(0, 10);
+
 ###### fromArray(), fromIterable(), fromStream()
 > Flux.fromArray(new String[]{"value 1", "value 2", "value 3"});
 > Flux.fromIterable(Arrays.asList("value 1", "value 2", "value 3"));

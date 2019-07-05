@@ -56,6 +56,7 @@ WebClient.create().get()
 ```
 
 ###### queryParams, MultiValueMap
+
 ```java
 MultiValueMap<String, String> params = new LinkedMultiValueMap<>();
 params.add("name_1", "value_1");
@@ -74,6 +75,7 @@ WebClient.create().get()
 - post()를 사용할 경우
 - .body() -> `BodyInserters`클래스를 사용하여 주입
 - MultiValueMap 도 사용가능
+
 ```java 
 MultiValueMap<String, String> params = new LinkedMultiValueMap<>();
 params.add("test_1", "value_1");
@@ -84,7 +86,9 @@ WebClient.create()
 	.body(BodyInserters.fromFormData(params))
 	.exchange();
 ```
+
 - 사용하던 model 그대로 호출
+
 ```java
 WebClient.create()
 	.post()

@@ -31,6 +31,7 @@ tags:
 
 #### 공통 설정
 - pom.xml
+
 ```xml
 <dependency>
 	<groupId>org.springframework.boot</groupId>
@@ -47,6 +48,7 @@ tags:
 	<scope>test</scope>
 </dependency>
 ```
+
 - Bootstrap class
     - project 생성시 그대로 사용
     - `@EnableWebFlux` 를 추가한다.(추가 class를 만들어서 관리해도 무방)
