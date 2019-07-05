@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Reactive! Webflux] 2. Mono and Flux"
+title:  "[Spring Webflux] 2. Mono and Flux"
 date:   2019-06-24 00:00:00 +0900
 categories:
  - spring

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Reactive! Webflux] 5. WebFlux + Cassandra 사용해보기"
+title:  "[Spring Webflux] 5. WebFlux + Cassandra 사용해보기"
 date:   2019-06-24 00:00:00 +0900
 categories:
  - spring

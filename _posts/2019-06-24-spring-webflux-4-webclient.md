@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Reactive! Webflux] 4. WebClient 사용해보기"
+title:  "[Spring Webflux] 4. WebClient 사용해보기"
 date:   2019-06-24 00:00:00 +0900
 categories:
  - spring
