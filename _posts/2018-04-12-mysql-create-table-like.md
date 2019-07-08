@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Mysql] Create Table like"
-date:   2018-04-13 00:00:00 +0900
+date:   2018-04-12 09:00:00 +0900
 categories:
  - database
 tags: 

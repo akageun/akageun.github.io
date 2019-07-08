@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "좋은 코드 작성하기."
-date:   2018-05-01 00:00:00 +0900
+date:   2018-04-30 09:00:00 +0900
 categories:
  - daily_log
 ---

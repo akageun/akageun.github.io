@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Spring Boot] embedded-redis 사용해보기."
-date:   2018-04-16 00:00:00 +0900
+date:   2018-04-15 09:00:00 +0900
 categories:
  - spring
 tags: 
