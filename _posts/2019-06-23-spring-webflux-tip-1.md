@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Webflux Tip] 1. WebTestClient timeout"
-date:   2019-06-24 00:00:00 +0900
+date:   2019-06-23 09:00:00 +0900
 categories:
  - spring
 tags: 

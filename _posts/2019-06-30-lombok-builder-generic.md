@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "lombok builder 사용시 generic 처리하기"
-date:   2019-07-01 00:00:00 +0900
+date:   2019-06-30 09:00:00 +0900
 categories:
  - java
 tags: 

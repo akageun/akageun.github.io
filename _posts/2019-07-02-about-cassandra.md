@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "cassandra 란?"
-date:   2019-07-03 00:00:00 +0900
+date:   2019-07-02 09:00:00 +0900
 categories:
  - database
 tags: 
