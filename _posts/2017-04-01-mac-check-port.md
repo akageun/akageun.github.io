@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "사용중인 포트 확인 및 닫기"
-date:   2017-04-02 00:00:00 +0900
+date:   2017-04-01 09:00:00 +0900
 categories:
  - mac
 tags: 

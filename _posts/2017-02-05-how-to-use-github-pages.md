@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Github] Github 페이지 활용하기."
-date:   2017-02-06 00:00:00 +0900
+date:   2017-02-05 09:00:00 +0900
 categories:
  - project
 tags: 

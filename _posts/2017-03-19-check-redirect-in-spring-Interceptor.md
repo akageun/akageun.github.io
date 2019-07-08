@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Spring Interceptor에서 redirect 체크하는 방법"
-date:   2017-03-20 00:00:00 +0900
+date:   2017-03-19 09:00:00 +0900
 categories:
  - spring
 tags: 

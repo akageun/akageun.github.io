@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "su와 su - 의 차이점"
-date:   2016-08-23 00:00:00 +0900
+date:   2016-08-22 09:00:00 +0900
 categories:
  - linux
 tags: 
