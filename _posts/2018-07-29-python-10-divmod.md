@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "10진수 n진수로 변환하기."
-date:   2018-07-30 00:00:00 +0900
+date:   2018-07-29 09:00:00 +0900
 categories:
  - python
 tags: 

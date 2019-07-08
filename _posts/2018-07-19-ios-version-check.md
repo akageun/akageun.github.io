@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "IOS 버전 관련 처리"
-date:   2018-07-20 00:00:00 +0900
+date:   2018-07-19 09:00:00 +0900
 categories:
  - javascript
 tags: 

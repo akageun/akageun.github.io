@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Intellij] 사용법 & 꿀팁!!"
-date:   2019-01-31 00:00:00 +0900
+date:   2019-01-30 09:00:00 +0900
 categories:
  - tools
 tags: 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Letsencrypt 사용하기(Nginx)"
-date:   2018-09-17 00:00:00 +0900
+date:   2018-09-16 09:00:00 +0900
 categories:
  - linux
 tags: 

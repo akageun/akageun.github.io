@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "VirtualBox install"
-date:   2019-05-03 00:00:00 +0900
+date:   2019-05-02 09:00:00 +0900
 categories:
  - linux
 tags: 

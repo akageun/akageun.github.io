@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Curl을 사용하여 URL에 대한 상세정보 알아보기"
-date:   2018-08-05 00:00:00 +0900
+date:   2018-08-04 09:00:00 +0900
 categories:
  - linux
 tags:

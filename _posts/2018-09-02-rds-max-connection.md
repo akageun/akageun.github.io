@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "RDS Mysql or Aurora 에서 Max_connection 값 수정하기."
-date:   2018-09-04 00:00:00 +0900
+date:   2018-09-02 09:00:00 +0900
 categories:
  - aws
 tags: 
