@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "외부 javascript 파일에 다국어 적용하기(i18n.properties 사용)"
-date:   2016-08-13 00:00:00 +0900
+date:   2016-08-12 09:00:00 +0900
 categories:
  - javascript
 tags: 

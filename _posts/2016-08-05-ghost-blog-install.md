@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Ghost] 1. Ghost Blog 소개 및 설치"
-date:   2016-08-06 00:00:00 +0900
+date:   2016-08-07 09:00:00 +0900
 categories:
  - open source
 tags: 

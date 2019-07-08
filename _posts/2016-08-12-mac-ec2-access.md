@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Mac 터미널에서 EC2 접속하기"
-date:   2016-08-13 00:00:00 +0900
+date:   2016-08-12 09:00:00 +0900
 categories:
  - aws
 tags: 
