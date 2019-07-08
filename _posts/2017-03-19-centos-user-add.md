@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Centos User Add(+Aws EC2)"
-date:   2017-03-20 00:00:00 +0900
+date:   2017-03-19 09:00:00 +0900
 categories:
  - linux
 tags: 

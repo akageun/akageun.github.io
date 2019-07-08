@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[ElasticSearch] not_analyzed and wildcard query"
-date:   2017-04-25 00:00:00 +0900
+date:   2017-04-24 09:00:00 +0900
 categories:
  - elastic
 tags: 

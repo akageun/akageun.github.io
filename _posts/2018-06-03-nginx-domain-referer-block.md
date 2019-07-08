@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[nginx] domain으로 referer block"
-date:   2018-06-04 00:00:00 +0900
+date:   2018-06-03 09:00:00 +0900
 categories:
  - webserver
 tags: 

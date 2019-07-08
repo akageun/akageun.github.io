@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[nginx] nginx conf 파일 내 다중 if 조건"
-date:   2018-01-13 00:00:00 +0900
+date:   2018-01-12 09:00:00 +0900
 categories:
  - webserver
 tags: 
