@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "how to install gradle on windows"
-date:   2018-07-03 00:00:00 +0900
+date:   2019-05-30 09:00:00 +0900
 ---
 
 # java 설치 확인
