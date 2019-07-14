@@ -3,7 +3,7 @@ layout: post
 title:  "Maven Install"
 date:   2016-08-13 09:00:00 +0900
 categories:
- - maven
+ - tools
 tags: 
  - java
  - maven
