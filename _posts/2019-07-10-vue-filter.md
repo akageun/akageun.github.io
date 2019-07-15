@@ -10,7 +10,7 @@ tags:
 
 # Vue 필터 사용해보기
 ## 사용하기
-```javascript
+```html
 <!-- 중괄호 보간법 -->
 {{ message | capitalize }}
 
