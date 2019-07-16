@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Spring Boot] embedded-redis 사용해보기."
+title:  "[Spring Batch Tip] 1. Job Id 가지고 오기"
 date:   2018-05-03 09:00:00 +0900
 categories:
  - spring

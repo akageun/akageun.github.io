@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Sring Webflux] 3. test case 만들어보기!"
+title:  "[Spring Webflux] 3. test case 만들어보기!"
 date:   2019-06-23 09:00:00 +0900
 categories:
  - spring
