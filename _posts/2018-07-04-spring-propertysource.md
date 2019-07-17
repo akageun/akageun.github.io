@@ -9,6 +9,7 @@ tags:
 ---
 # 1. 현상
 - 아래와 같은 소스를 사용할 경우
+
 ```java
 @PropertySource(value = {"classpath:common.properties"})
 ```
