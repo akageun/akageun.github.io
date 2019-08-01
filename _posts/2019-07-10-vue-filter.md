@@ -11,12 +11,14 @@ tags:
 # Vue 필터 사용해보기
 ## 사용하기
 ```vue
+{% raw %}
 <!-- 중괄호 보간법 -->
 {{ message | capitalize }}
-
+{% endraw %}
 <!-- v-bind 표현 -->
 <div v-bind:id="rawId | formatId"></div>
 ```
+
 
 ## 로컬 선언
 ```javascript
@@ -34,7 +36,7 @@ new Vue({
 ```
 
 ## 전역 선언
-```vue
+```javascript
 Vue.filter('capitalize', (value) => {
   if (!value) return ''
   value = value.toString()
@@ -70,14 +72,18 @@ new Vue({
 ```
 
 ## 필터에 파라미터 넣기
-```vue
-{{ message | filterA('arg1', arg2) }}
+{% raw %}
 ```
+ {{ message | filterA('arg1', arg2) }}
+ ```
+{% endraw %}
 
 ## 필터 체이닝
-```vue
-{{ message | filterA | filterB }}
+{% raw %}
 ```
+{{ message | filterA | filterB }}
+ ```
+{% endraw %}
 
 ---
 ## 참고자료
