@@ -8,6 +8,10 @@ tags:
  - spring boot
  - msa
 ---
+- 최근 msa 형태로 개발이 많이 진행되고, 각 서버에 들어가서 인스턴스 정보들을 확인하는 등 모니터링을 하는데, 번거로움이 크다.
+- 이미 `spring-boot-starter-actuator` 라는 좋은 모니터링 정보들을 제공해주는데, 모아 보는 툴을 고민하던 중에
+- 굉장히 좋은 툴 하나를 발견했다.(사실은 예전부터 사용했으나, 블로깅을 안해놓음)
+
 # 여러 Spring Boot service instance 들에 대한 monitoring 방법
 - 아래 설정들로 간단하게 눈으로 확인해볼 수 있다.
 
