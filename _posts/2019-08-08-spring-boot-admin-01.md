@@ -100,6 +100,16 @@ management:
 
 ![image](https://user-images.githubusercontent.com/13219787/62629998-22ea5d00-b969-11e9-9ef2-1d9d3e97fdb7.png)
 
+## 로그파일 보기
+- application.yml or properties에 아래와 같이 각 client 설정값에 log path 를 추가해주면, admin server 에서 손쉽게 볼 수 있다.
+
+```yml
+logging:
+    file: ./logs/data-a.log
+```
+
+![image](https://user-images.githubusercontent.com/13219787/62636852-47e4cd00-b975-11e9-938c-1c11c3631d09.png)
+
 ---
 # Security 적용하기
 - HeapDump 등 중요한 정보들을 볼 수 있기 때문에 보안은 필수다.
