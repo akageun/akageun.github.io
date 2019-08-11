@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ""
+title:  "History 명령어"
 date:   2018-07-05 09:00:00 +0900
 categories:
  - linux
