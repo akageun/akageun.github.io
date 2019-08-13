@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Pyton3] python 3.5.2 Install"
+title:  "[Python3] python 3.5.2 Install"
 date:   2016-09-09 09:00:00 +0900
 categories:
  - linux
