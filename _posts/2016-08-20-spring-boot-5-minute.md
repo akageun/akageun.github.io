@@ -28,6 +28,7 @@ tags:
 - spring-boot-starter-web을 추가했다.
 
 ## 2) Controller 만들기
+
 ```java
 package kr.geun.bootStartSample.www.controller;
 
