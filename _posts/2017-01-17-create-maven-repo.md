@@ -61,7 +61,8 @@ nexus-webapp-context-path=/nexus
 ```
 
 # 4. Nexus Run
-- ./bin/nexus start
+
+> ./bin/nexus start
 
 # 5. 참고 
 - http://bcho.tistory.com/790
