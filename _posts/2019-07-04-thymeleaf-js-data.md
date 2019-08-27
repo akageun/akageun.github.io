@@ -39,3 +39,21 @@ public ModelAndView home(){
 </body>
 </html>
 ```
+
+# Foreach 사용하는 법
+
+```html
+<script th:inline="javascript">
+	/*<![CDATA[*/
+
+	/*[# th:each="tmp : ${list}"]*/
+	noti(/*[[${tmp.testValue}]]*/, /*[[${tmp.tmpValue}]]*/);
+	/*[/]*/
+
+	/*]]>*/
+	
+	function noti(testValue, tmpValue){
+		console.log(testValue, tmpValue);
+	}
+</script>
+```
