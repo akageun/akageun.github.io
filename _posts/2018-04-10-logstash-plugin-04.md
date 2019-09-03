@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[LOGSTASH] 04. Logstash Plugin 01"
-date:   2018-04-10 01:00:00 +0900
+date:   2018-04-10 09:00:00 +0900
 categories:
  - elastic
 tags: 

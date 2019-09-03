@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ImageMagicK 설치"
-date:   2016-12-20 01:00:00 +0900
+date:   2016-12-20 09:00:00 +0900
 categories:
  - linux
 tags: 

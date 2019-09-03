@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Spring data jpa] tip 시리즈! - Enum 처리 "
-date:   2019-09-04 01:00:00 +0900
+date:   2019-09-04 09:00:00 +0900
 categories:
  - spring
 tags: 

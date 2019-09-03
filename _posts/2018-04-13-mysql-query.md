@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Mysql] 기억하면 좋은 쿼리 모음"
-date:   2018-04-13 01:00:00 +0900
+date:   2018-04-13 09:00:00 +0900
 categories:
  - database
 tags: 
