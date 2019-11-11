@@ -34,7 +34,7 @@ tags:
 > docker pull centos
 
 ## 받아온 이미지 목록 보기
-> docker image
+> docker images
 
 ## docker run
 - 위에 pull 받은 centos를 실행 시킬 수 있음.
