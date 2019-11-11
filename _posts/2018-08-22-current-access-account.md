@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "현재 접속 계정 보기."
+title:  "[Mysql] 현재 접속 계정 보기."
 date:   2018-08-22 09:00:00 +0900
 categories:
  - database
