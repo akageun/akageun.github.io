@@ -10,7 +10,7 @@ tags:
  - nginx
 ---
 
-# 1. yum repo 설정
+## 1. yum repo 설정
 
 > vim /etc/yum.repos.d/nginx.repo
 
@@ -22,16 +22,18 @@ gpgcheck=0
 enabled=1
 ```
 
-# 2. yum 실행
+## 2. yum 실행
 
 > yum install -y nginx
 
-# 3. chkconfig 등록(부팅시 자동 실행)
+## 3. chkconfig 등록(부팅시 자동 실행)
 
 > chkconfig --levels 235 nginx on
 
-# 4. nginx
+## 4. nginx
 
 > service nginx start
+
 > service nginx stop
+
 > service nginx restart
