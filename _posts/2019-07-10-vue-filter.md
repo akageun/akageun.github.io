@@ -88,4 +88,5 @@ new Vue({
 ---
 ## 참고자료
 - https://kr.vuejs.org/v2/guide/filters.html 
+- https://beomy.tistory.com/65
 - https://stackoverflow.com/questions/47004702/how-to-add-a-bunch-of-global-filters-in-vue-js
