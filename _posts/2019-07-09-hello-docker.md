@@ -49,6 +49,7 @@ tags:
 > docker run -i -t centos /bin/bash
 
 - 아래와 같이 리눅스 명령어를 실행 할 수 있음.
+
 > [root@ea41d37bc2c6 /]#  ls -al
 
 옵션 | 설명
