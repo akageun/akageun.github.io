@@ -129,3 +129,5 @@ public void deserializerTest() throws IOException {
 	Assert.assertEquals(TestEnum.TEST_1, model.getTest());
 }
 ```
+
+---
