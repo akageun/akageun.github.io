@@ -161,3 +161,13 @@ void deleteByName(String name);
 
 testCollectionsRepo.deleteByName("철수");
 ```
+
+
+## test 용 몽고디비 설정
+```xml
+<dependency>
+    <groupId>de.flapdoodle.embed</groupId>
+    <artifactId>de.flapdoodle.embed.mongo</artifactId>
+    <scope>test</scope>
+</dependency>
+```
