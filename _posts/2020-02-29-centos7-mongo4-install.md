@@ -30,6 +30,7 @@ gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc
 > yum repolist
 
 - 결과
+
 > mongodb-org-4.2/7                       MongoDB Repository                    10
 
 #### yum 설치
@@ -79,7 +80,9 @@ firewall-cmd --reload
 > mongo 
 
 - `db.version()` 을 통하여 설치버전 확인. 4.2.1로 원하던 버전을 정상 설치했다.
+
 > db.version()
+
 > 4.2.1
 
 ## 관리자 계정생성
