@@ -4,9 +4,13 @@
 <link rel="shortcut icon" href="{{ site.url }}/assets/favicon.ico">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-<meta name="description"
-      content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<title>
+    {% if page.title == "Home" %}
+    {{ site.title }} &middot; {{ site.tagline }}
+    {% else %}
+    {{ page.title }} &middot; {{ site.title }}
+    {% endif %}
+</title>
 
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -15,18 +19,85 @@
 <link href="http://cdn.jsdelivr.net/gh/joungkyun/font-d2coding/d2coding.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="{{ "/assets/css/main.css"}}"/>
 
-<link rel="alternate" type="application/rss+xml" title="{{ site.title }}"
-      href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+<!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
 
+<meta name="naver-site-verification" content="71162dce5ebb8fcd0c235c00133bb4b72e9ece08"/>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+<meta name="author" content="{{ site.author.name }}"/>
+<meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}"/>
+<meta name="keywords"
+      content="{% if page.title %}{{ page.title }}, {{ site.title }}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}"/>
+
+{% if page.title %}
+<meta content="{{ page.title }}" property="og:title">
+<meta content="article" property="og:type">
+{% else %}
+<meta content="{{ site.title }}" property="og:title">
+<meta content="website" property="og:type">
+{% endif %}
+
+{% if page.description %}
+<meta content="{{ page.description }}" property="og:description">
+{% else %}
+<meta content="{{ site.description }}" property="og:description">
+{% endif %}
+
+{% if page.url %}
+<meta content="{{ site.url }}{{ page.url }}" property="og:url">
+{% endif %}
+
+{% if page.date %}
+<meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+<meta content="{{ site.url }}/about/" property="article:author">
+{% endif %}
+
+{% if page.image %}
+<meta content="{{ site.url }}/static/img/posts/{{ page.image }}" property="og:image">
+{% else %}
+<meta content="{{ site.url }}{{ site.avatar_url }}" property="og:image">
+{% endif %}
+
+{% if page.categories %}
+{% for category in page.categories limit:1 %}
+<meta content="{{ category }}" property="article:section">
+{% endfor %}
+{% endif %}
+
+{% if page.tags %}
+{% for tag in page.tags %}
+<meta content="{{ tag }}" property="article:tag">
+{% endfor %}
+{% endif %}
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@{{ site.share.twitter_username }}">
+<meta name="twitter:creator" content="@{{ site.share.twitter_username }}">
+
+{% if page.title %}
+<meta name="twitter:title" content="{{ page.title }}">
+{% else %}
+<meta name="twitter:title" content="{{ site.title }}">
+{% endif %}
+
+{% if page.url %}
+<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+{% endif %}
+
+{% if page.description %}
+<meta name="twitter:description" content="{{ page.description }}">
+{% else %}
+<meta name="twitter:description" content="{{ site.description }}">
+{% endif %}
+
+{% if page.header-img %}
+<meta name="twitter:image:src" content="{{ site.url }}/{{ page.header-img }}">
+{% endif %}
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+{% if site.google_analytics != null %}
+{% include google_analytics.html %}
+{% endif %}
+
+{% include google_adsense.html %}
+

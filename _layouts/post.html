@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% include google_ad.html %}
+{% include adsbygoogle.html %}
 
 <div class="row">
     <div class="col-12">
@@ -10,13 +10,17 @@ layout: default
                 {{ page.title }}
             </h1>
             <p class="blog-post-meta">{{ page.date | date_to_string }}</p>
-            <br><br>
             {{ content }}
         </div>
     </div>
 </div>
-<div class="row">
+<div class="row mb-3">
     <div class="col-12">
         {% include related_posts.html %}
+    </div>
+</div>
+<div class="row mb-3">
+    <div class="col-12">
+        {% include disqus.html %}
     </div>
 </div>
