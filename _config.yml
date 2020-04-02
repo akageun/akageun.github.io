@@ -1,4 +1,8 @@
-
+markdown: redcarpet
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
+redcarpet:
+    extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "fenced_code_blocks"]
+    
 # Permalinks
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
@@ -17,22 +21,22 @@ avatar_url: /assets/image/IMG_3426_new.jpg
 
 # About/contact
 author:
-  name:              Geun
-  url:               https://akageun.github.io
-  email:             akageun@gmail.com
+    name:              Geun
+    url:               https://akageun.github.io
+    email:             akageun@gmail.com
 
 # Custom vars
 version:             0.0.1
 
 plugins: [
-  jekyll-paginate,
-  jekyll-gist
+    jekyll-paginate,
+    jekyll-gist
 ]
 
 google_analytics:
-  ua: 'UA-141840466-1'
+    ua: 'UA-141840466-1'
 github:
-  repo: 'https://github.com/akageun'
+    repo: 'https://github.com/akageun'
 
 category_dir: category/
 tag_dir: tag/
@@ -41,3 +45,10 @@ paginate_path: "/page/:num/"
 disqus_shortname: akageun-github-io
 
 total_page: 3
+
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - CNAME
