@@ -65,7 +65,6 @@ Flux.fromIterable(IntStream.range(0, 5).boxed().collect(Collectors.toList()))
 	.subscribe();
 ```
 
-```
 #### flatmap 사용
 ```java
 Flux.fromIterable(IntStream.range(0, 5).boxed().collect(Collectors.toList()))

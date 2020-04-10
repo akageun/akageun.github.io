@@ -26,7 +26,7 @@ tags:
 - 3) 확인
 
 > which mongod
-> --> /usr/local/bin/mongod
+> /usr/local/bin/mongod
 > readlink /usr/local/bin/mongod
 > --> /opt/tokumx-2.0.0-linux-x86_64/bin/mongod
 

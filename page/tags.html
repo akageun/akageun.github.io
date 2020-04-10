@@ -1,0 +1,50 @@
+---
+layout: default
+title: Tags
+permalink: /tag/
+type: page
+---
+<div class="row">
+    <div class="col-md-8">
+        {% include adsbygoogle.html %}
+
+        <h3 class="pb-4 mb-4 font-italic border-bottom">
+            {{page.title}}
+        </h3>
+
+        {% capture tags %}
+        {% for tag in site.tags %}
+        {{ tag[0] }}
+        {% endfor %}
+        {% endcapture %}
+        {% assign sortedtags = tags | split:' ' | sort %}
+
+        <ul class="list-unstyled">
+            {% for tag in sortedtags %}
+            <h2 id="{{ tag }}">{{ tag }}</h2>
+            {% for post in site.tags[tag] %}
+            <li class="ml-4">
+                <time>
+                    {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+                </time>
+                <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+
+                {% include category.html %}
+                {% include tag.html %}
+            </li>
+            {% endfor %}
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <ul>
+            {% for tag in sortedtags %}
+            <li>
+                <a data-scroll href="#{{ tag }}">
+                    {{ tag }} ({{ site.tags[tag].size }})
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

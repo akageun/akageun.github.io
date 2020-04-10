@@ -1,3 +1,21 @@
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+    input: GFM
+    hard_wrap: false
+    auto_ids: true
+    footnote_nr: 1
+    entity_output: as_char
+    toc_levels: 1..6
+    smart_quotes: lsquo,rsquo,ldquo,rdquo
+    enable_coderay: false
 
 # Permalinks
 #
@@ -11,28 +29,28 @@ tagline:             'Backend Developer'
 description:         '언제나 개발하기를 즐기는 개발자 입니다.'
 url:                 https://akageun.github.io
 baseurl:             ''
-paginate:            10
+paginate:            30
 
 avatar_url: /assets/image/IMG_3426_new.jpg
 
 # About/contact
 author:
-  name:              Geun
-  url:               https://akageun.github.io
-  email:             akageun@gmail.com
+    name:              Geun
+    url:               https://akageun.github.io
+    email:             akageun@gmail.com
 
 # Custom vars
 version:             0.0.1
 
 plugins: [
-  jekyll-paginate,
-  jekyll-gist
+    jekyll-paginate,
+    jekyll-gist
 ]
 
 google_analytics:
-  ua: 'UA-141840466-1'
+    ua: 'UA-141840466-1'
 github:
-  repo: 'https://github.com/akageun'
+    repo: 'https://github.com/akageun'
 
 category_dir: category/
 tag_dir: tag/
@@ -41,3 +59,10 @@ paginate_path: "/page/:num/"
 disqus_shortname: akageun-github-io
 
 total_page: 3
+
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - CNAME
