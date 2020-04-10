@@ -26,6 +26,7 @@ INSERT INTO example (key, value) VALUES ('test', 2) USING TTL 10;
 
 #### 확인
 - 10초 내에
+
 ```cql
 SELECT * FROM example;
 ```

@@ -71,6 +71,7 @@ gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc
 - 기존 설정은 `bindIp: 127.0.0.1` 와 같이 되어 있다. 내부에서만 접근 가능하므로, 모든 곳에서 접근가능하게 하고 싶을 경우에는 `bindIp: 0.0.0.0` 으로 변경하면됨.
 
 - 추가적으로 방화벽도 오픈
+
 ```
 firewall-cmd --permanent --zone=public --add-port=27017/tcp
 firewall-cmd --reload
@@ -165,7 +166,8 @@ db.createUser(
 > sudo service mongod stop
 
 #### Packages 제거.
-> sudo yum erase $(rpm -qa | grep mongodb-org)
+
+> sudo yum erase $(rpm -qa {% raw %}\|{% endraw %} grep mongodb-org) 
 
 #### Data 관련 내용 삭제
 > sudo rm -r /var/log/mongodb

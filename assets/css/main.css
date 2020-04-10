@@ -13,6 +13,10 @@ a:focus {
     color: inherit;
 }
 
+img{
+    max-width: 100%;
+}
+
 /* stylelint-disable selector-list-comma-newline-after */
 
 .blog-header {
