@@ -1,0 +1,52 @@
+---
+layout: default
+title: Categories
+permalink: /category/
+type: page
+---
+<div class="row">
+    <div class="col-md-8">
+        {% include adsbygoogle.html %}
+
+        <h3 class="pb-4 mb-4 font-italic border-bottom">
+            {{page.title}}
+        </h3>
+
+        <ul class="list-unstyled">
+            {% for category in site.categories %}
+            <h2 id="{{category | first}}">{{category | first}}</h2>
+            {% for posts in category %}
+            {% for post in posts %}
+            {% if post.url %}
+            <li class="ml-4">
+                <time>
+                    {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+                </time>
+                <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+
+                {% include category.html %}
+                {% include tag.html %}
+            </li>
+            {% endif %}
+            {% endfor %}
+            {% endfor %}
+            {% endfor %}
+        </ul>
+
+    </div>
+    <aside class="col-md-3 blog-sidebar">
+        <div class="p-4">
+            <ol class="list-unstyled mb-0">
+                <ul id="content-side" class="content-ul">
+                    {% for category in site.categories%}
+                    <li>
+                        <a data-scroll href="#{{ category | first }}">
+                            {{ category | first }} <span class="badge badge-warning badge-pill">{{ category | last | size }}</span>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </ol>
+        </div>
+    </aside>
+</div>

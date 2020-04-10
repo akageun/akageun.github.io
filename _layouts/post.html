@@ -1,26 +1,36 @@
 ---
 layout: default
 ---
-{% include adsbygoogle.html %}
-
 <div class="row">
-    <div class="col-12">
+    <div class="col-md-9 blog-main">
+        {% include adsbygoogle.html %}
+
         <div class="blog-post">
-            <h1 class="blog-post-title">
+            <h3 class="blog-post-title">
                 {{ page.title }}
-            </h1>
-            <p class="blog-post-meta">{{ page.date | date_to_string }}</p>
+            </h3>
+            <p class="blog-post-meta">
+                {{ page.date | date_to_string }}
+
+                {% if page.tags %}
+                {% for tag in page.tags %}
+                <span class="badge badge-pill badge-primary">{{ tag }}</span>
+                {% endfor %}
+                {% endif %}
+
+            </p>
+
             {{ content }}
+
+            <br>
+
+            {% include related_posts.html %}
+
+            {% include disqus.html %}
         </div>
+
     </div>
+
+    {% include post_side_bar.html %}
 </div>
-<div class="row mb-3">
-    <div class="col-12">
-        {% include related_posts.html %}
-    </div>
-</div>
-<div class="row mb-3">
-    <div class="col-12">
-        {% include disqus.html %}
-    </div>
-</div>
+

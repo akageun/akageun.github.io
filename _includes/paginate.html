@@ -1,4 +1,4 @@
-<nav class="blog-pagination ">
+<div class="blog-pagination">
     {% if paginator.previous_page %}
     <a class="btn btn-outline-primary"
        href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Previous</a>
@@ -9,4 +9,4 @@
        href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" tabindex="-1"
        aria-disabled="true">Next</a>
     {% endif %}
-</nav>
+</div>

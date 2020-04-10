@@ -3,7 +3,7 @@
 {% assign maxRelated = 4 %}
 {% assign minCommonTags = 1 %}
 {% assign maxRelatedCounter = 0 %}
-<ul class="list-group list-group-flush">
+<ul >
     {% for post in site.posts %}
 
 
@@ -20,7 +20,7 @@
     {% endfor %}
 
     {% if sameTagCount >= minCommonTags %}
-    <li class="list-group-item">
+    <li>
         <a href="{{ site.url }}{{ post.url }}">
             {{ post.title }}
             <small>{{ post.date | date_to_string }}</small>

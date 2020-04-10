@@ -1,0 +1,30 @@
+<aside class="col-md-3 blog-sidebar">
+    <div class="p-4">
+        <h4 class="font-italic">Recent Posts</h4>
+        <ol class="list-unstyled mb-0">
+            {% for post in site.posts offset: 0 limit: 10 %}
+            <li>
+                <a href="{{ site.baseurl }}{{ post.url }}" data-toggle="tooltip" data-placement="top" title="{{post.title}}">
+                    {{ post.title | strip_html | truncatewords: 10, '...' }}
+                </a>
+            </li>
+            {% endfor %}
+        </ol>
+    </div>
+
+    <div class="p-4">
+        <h4 class="font-italic">Category</h4>
+        <ol class="list-unstyled mb-0">
+            {% for category in site.categories %}
+            <li class="d-flex justify-content-between align-items-center">
+                <a href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}">
+                    {{ category | first }}
+
+                    <span class="badge badge-info badge-pill">{{ category | last | size }}</span>
+                </a>
+            </li>
+            {% endfor %}
+        </ol>
+    </div>
+
+</aside><!-- /.blog-sidebar -->
