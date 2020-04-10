@@ -5,7 +5,7 @@ date:   2018-07-17 09:00:00 +0900
 categories:
  - daily_log
 tags: 
- - item review
+ - item_review
 ---
 
 ## 1. 사용기

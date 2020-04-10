@@ -5,7 +5,7 @@ date:   2016-12-20 09:00:00 +0900
 categories:
  - linux
 tags: 
- - image magic k
+ - imagemagic_k
 ---
 
 # 0. ImageMagicK란?

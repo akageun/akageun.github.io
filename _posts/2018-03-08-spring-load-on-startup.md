@@ -5,7 +5,7 @@ date:   2018-03-08 09:00:00 +0900
 categories:
  - spring
 tags: 
- - spring boot
+ - spring_boot
 ---
 # 1. Goal
 - Spring Boot에 `spring-boot-starter-web`를 사용 중이다.

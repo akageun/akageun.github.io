@@ -3,7 +3,7 @@ layout: post
 title:  "Jekyll 이중 중괄호 문제 해결"
 date:   2019-07-15 09:00:00 +0900
 categories:
- - open source
+ - open_source
 tags: 
  - jekyll
 ---

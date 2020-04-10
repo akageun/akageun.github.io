@@ -3,9 +3,9 @@ layout: post
 title:  "블록체인 관련 기본 용어정리."
 date:   2018-02-23 09:00:00 +0900
 categories:
- - block chain
+ - block_chain
 tags: 
- - block chain
+ - block_chain
 ---
 ## 1. 기본용어
 #### 1) 무결성

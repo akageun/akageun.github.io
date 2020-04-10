@@ -6,7 +6,7 @@ categories:
  - java
 tags: 
  - java
- - blockchain
+ - block_chain
 ---
 
 - 해당 내용은 공부하면서 간단하게 만들어본 블록체인 입니다.

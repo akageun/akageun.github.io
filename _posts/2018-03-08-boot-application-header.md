@@ -5,7 +5,7 @@ date:   2018-03-08 09:00:00 +0900
 categories:
  - spring
 tags: 
- - spring boot
+ - spring_boot
 ---
 # 1. X-Application-Context Header????
 - response header를 보면, 아래와 같은 header 값이 있다. 

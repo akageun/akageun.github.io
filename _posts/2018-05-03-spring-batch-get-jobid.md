@@ -6,7 +6,7 @@ categories:
  - spring
 tags: 
  - spring
- - spring batch
+ - spring_batch
 ---
 # 1. Job 정보 가지고 오기.
 - 개발하는 중에 ItemReader, ItemProcessor, ItemWriter 등에서 job정보를 가지고 와야 할 때가 있다.
