@@ -18,6 +18,7 @@ tags:
 - '?' 는 single character match
 - 주의사항 : '*', '?'를 첫 시작으로 사용하면 안됨.
 - 샘플
+
 ```
 curl -XPOST http://localhost:9200/{테스트Index}/{테스트Type}/_search?pertty -d '{
 "query" : {

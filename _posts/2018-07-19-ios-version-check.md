@@ -15,6 +15,7 @@ tags:
 # 2. 하고싶은 것
 - 11.4 버전 이상일 경우를 체크하고 싶다.
 - 소스
+
 ```javascript
 function osVersion(){
     var mt = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);

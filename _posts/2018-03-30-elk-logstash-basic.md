@@ -18,6 +18,7 @@ tags:
 > java -version
 
 - 아래와 같이 나오면 설치되어 있는 것이고, 아닐 경우 jdk 설치를 먼저 진행하세요.
+
 ```
 java version "1.8.0_151"
 Java(TM) SE Runtime Environment (build 1.8.0_151-b12)
@@ -47,6 +48,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.151-b12, mixed mode)
 
 # 3. Logstash 설정
 - aws ec2를 프리티어로 사용할 경우나, 메모리가 부족할 경우에만 설정하세요.
+
 ## 1) JVM 메모리 설정
 
 > vi ~/logstash/config/jvm.options

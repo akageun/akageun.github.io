@@ -14,6 +14,7 @@ tags:
 
 # 2. pom.xml
 - https://github.com/kstyrc/embedded-redis 로 사용할 예정
+
 ```xml
 <!-- embedded-redis -->
 <dependency>
@@ -25,6 +26,7 @@ tags:
 
 # 3. Redis Configuration
 - application.yml
+
 ```yaml
 spring:
   redis:
@@ -34,6 +36,7 @@ spring:
 ```
 
 - Start 및 stop 설정 필요
+
 ```java
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -71,6 +74,7 @@ public class EmbeddedRedisConfiguration {
 ```
 
 - Template 설정
+
 ```java
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -130,12 +134,14 @@ public class RedisConfig {
 
 # 4. 사용
 - RedisTemplate 사용
+
 ```java
 @Autowired
 private RedisTemplate redisTemplate;
 ```
 
 - Code
+
 ```java
 redisTemplate.opsForValue().set("test", "test1111");
 redisTemplate.opsForValue().get("test");

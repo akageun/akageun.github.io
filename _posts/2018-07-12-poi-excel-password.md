@@ -22,6 +22,7 @@ tags:
 
 # 2. 샘플
 - 아래와 같이 설정해주면 잘 나온다.
+
 ```java
 EncryptionInfo encryptionInfo = new EncryptionInfo(EncryptionMode.agile);
 Encryptor encryptor = encryptionInfo.getEncryptor();

@@ -11,7 +11,7 @@ tags:
 
 # 1. 계정 존재 여부 확인
 
-> cat /etc/passwd | grep {추가할 계정명}
+> cat /etc/passwd {% raw %}\|{% endraw %} grep {추가할 계정명}
 
 # 2. 계정 추가
 
@@ -19,12 +19,12 @@ tags:
 
 - 확인
 
-> cat /etc/passwd | grep {추가할 계정명}
+> cat /etc/passwd {% raw %}\|{% endraw %} grep {추가할 계정명}
 
 # 3. 비밀번호 생성 or 키 설정
 - 비밀번호 생성
 
-> echo '{비밀번호}' | passwd --stdin {추가할 계정명}
+> echo '{비밀번호}' {% raw %}\|{% endraw %} passwd --stdin {추가할 계정명}
 
 - 키 설정(on AWS)
 

@@ -31,6 +31,7 @@ public class MainTest {
 #### (1) 접근 제어자(Access Modifier)
 - defualt, private, protected, public
 - private -> default -> protected -> public 순으로 보다 많은 접근이 가능하다.
+
 ####  (2) 해당 값 변경 또는 제거 할 경우
 
 ```java
@@ -48,6 +49,7 @@ public class MainTest {
 ```
 
 - 찾지 못함.
+
 ```
 오류: MainTest 클래스에서 기본 메소드를 찾을 수 없습니다. 다음 형식으로 기본 메소드를 정의하십시오.
 

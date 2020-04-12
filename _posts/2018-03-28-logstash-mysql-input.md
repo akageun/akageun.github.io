@@ -95,6 +95,7 @@ output {
 > bin/logstash -f ~/sample.conf
 
 - 응답
+
 ```
 [INFO ][logstash.inputs.jdbc     ] (0.041156s) SELECT 1 FROM DUAL
 {"1":1,"@version":"1","@timestamp":"2018-03-22T07:44:43.471Z"}

@@ -28,10 +28,10 @@ tags:
 - 최근 5개의 명령어를 보여준다.
 
 ## 3) 이력 중 문자열 검색
-- history |grep {검색할 문자열}
+- history {% raw %}\|{% endraw %} grep {검색할 문자열}
 - {검색할 문자열}에 대한 명령어만 리스트로 노출된다.
 
-> history |grep cd
+> history {% raw %}\|{% endraw %} grep cd
 
 ## 4) 기존 이력 삭제
 - 기존에 입력했던 명령어 목록 삭제
@@ -50,8 +50,6 @@ tags:
 > !506
 
 ## 7) 바로 전 입력한 명령어 실행
-- !!
-
 > !!
 
 ![image](https://user-images.githubusercontent.com/13219787/61382726-454c0600-a8e8-11e9-9bc5-952729035b97.png)

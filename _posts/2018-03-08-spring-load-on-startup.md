@@ -52,13 +52,16 @@ public static BeanFactoryPostProcessor beanFactoryPostProcessor() {
 
 # 3-2. 수정(추천!)
 - application.yml에 해당 내용 추가(기본으로 -1로 되어 있다.)
+
 ```yml
 spring:
   mvc:
     servlet:
       load-on-startup: 1
 ```
+
 - application.properties일 경우
+
 > spring.mvc.servlet.load-on-startup=1
 
 ---
