@@ -161,6 +161,11 @@ db.createUser(
 #### 쉘로 접속하고 싶을 경우
 > mongo --port 27017 -u 'testUser' -p 'q1w2e3r4' --authenticationDatabase 'test_db'
 
+###### 또는
+> mongo
+> use {db name}
+> db.auth("id", "passwd");
+
 # 추가로 설치한 mongo DB 를 지우고 싶을 경우
 #### 몽고디비 정비
 > sudo service mongod stop
