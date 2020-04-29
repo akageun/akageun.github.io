@@ -1,6 +1,10 @@
 @import "syntax.css";
 @import "markdown.css";
 
+body {
+	font-family: D2Coding, 'D2 coding', monosapce;
+}
+
 a {
     text-decoration: none;
     cursor: pointer;
