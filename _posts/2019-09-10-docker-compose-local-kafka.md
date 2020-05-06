@@ -179,6 +179,11 @@ cd kafka_2.12-2.3.0
 
 - 무언가를 `producer`에서 입력하게 되면 `consumer`에 나오게 된다. 
 
+## 추가
+#### 컨테이너 정지 및 제거
+
+> docker-compose -f docker-compose.yml stop && docker-compose -f docker-compose.yml rm -vf
+
 ---
 ## 참고링크
 - https://github.com/Yelp/docker-compose
