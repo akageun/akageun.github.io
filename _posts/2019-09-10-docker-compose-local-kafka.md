@@ -137,14 +137,12 @@ or
     - 스칼라 : 2.12, 카프카 : 2.3.0 
     - https://kafka.apache.org/downloads
 
-
 #### 설치
 ```
-wget https://www.apache.org/dyn/closer.cgi?path=/kafka/2.3.0/kafka_2.12-2.3.0.tgz
+wget http://mirror.navercorp.com/apache/kafka/2.3.0/kafka_2.12-2.3.0.tgz
 tar xzvf kafka_2.12-2.3.0.tgz
 cd kafka_2.12-2.3.0
 ```
-
 
 #### topic 
 - 옵션
