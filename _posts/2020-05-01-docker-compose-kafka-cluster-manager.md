@@ -50,11 +50,14 @@ services:
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock
         environment:
+            KAFKA_BROKER_ID: 1
             KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
             JMX_PORT: 9093
-            KAFKA_ADVERTISED_HOST_NAME: ${EXPOSED_HOSTNAME}
-            KAFKA_ADVERTISED_PORT: 9095
             KAFKA_JMX_OPTS: -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=${EXPOSED_HOSTNAME} -Dcom.sun.management.jmxremote.rmi.port=9093
+            KAFKA_ADVERTISED_HOST_NAME: ${EXPOSED_HOSTNAME}
+            KAFKA_ADVERTISED_PORT: 9092
+            KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://${EXPOSED_HOSTNAME}:9095
+            KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 2
         depends_on:
             - zookeeper
 ```
@@ -111,11 +114,14 @@ services:
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock
         environment:
+            KAFKA_BROKER_ID: 1
             KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
             JMX_PORT: 9093
-            KAFKA_ADVERTISED_HOST_NAME: ${EXPOSED_HOSTNAME}
-            KAFKA_ADVERTISED_PORT: 9095
             KAFKA_JMX_OPTS: -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=${EXPOSED_HOSTNAME} -Dcom.sun.management.jmxremote.rmi.port=9093
+            KAFKA_ADVERTISED_HOST_NAME: ${EXPOSED_HOSTNAME}
+            KAFKA_ADVERTISED_PORT: 9092
+            KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://${EXPOSED_HOSTNAME}:9095
+            KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 2
         depends_on:
             - zookeeper
     kafka2:
@@ -127,11 +133,14 @@ services:
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock
         environment:
+            KAFKA_BROKER_ID: 2
             KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
             JMX_PORT: 9093
-            KAFKA_ADVERTISED_HOST_NAME: ${EXPOSED_HOSTNAME}
-            KAFKA_ADVERTISED_PORT: 9096
             KAFKA_JMX_OPTS: -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=${EXPOSED_HOSTNAME} -Dcom.sun.management.jmxremote.rmi.port=9093
+            KAFKA_ADVERTISED_HOST_NAME: ${EXPOSED_HOSTNAME}
+            KAFKA_ADVERTISED_PORT: 9092
+            KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://${EXPOSED_HOSTNAME}:9096
+            KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 2
         depends_on:
             - zookeeper
     kafka3:
@@ -143,11 +152,14 @@ services:
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock
         environment:
+            KAFKA_BROKER_ID: 3
             KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
             JMX_PORT: 9093
-            KAFKA_ADVERTISED_HOST_NAME: ${EXPOSED_HOSTNAME}
-            KAFKA_ADVERTISED_PORT: 9097
             KAFKA_JMX_OPTS: -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=${EXPOSED_HOSTNAME} -Dcom.sun.management.jmxremote.rmi.port=9093
+            KAFKA_ADVERTISED_HOST_NAME: ${EXPOSED_HOSTNAME}
+            KAFKA_ADVERTISED_PORT: 9092
+            KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://${EXPOSED_HOSTNAME}:9097
+            KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 2
         depends_on:
             - zookeeper
 
