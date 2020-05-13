@@ -6,6 +6,7 @@ categories:
  - spring
 tags: 
  - spring_boot
+ - spring
 ---
 # 1. Goal
 - Spring Boot에 `spring-boot-starter-web`를 사용 중이다.
