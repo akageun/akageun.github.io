@@ -5,6 +5,7 @@ date:   2019-06-04 09:00:00 +0900
 categories:
  - spring
 tags: 
+ - spring
  - async
 ---
 # Async를 사용하며 예외에 대한 대응 방법
