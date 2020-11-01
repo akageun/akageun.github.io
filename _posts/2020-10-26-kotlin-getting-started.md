@@ -106,3 +106,34 @@ fun printSum(a: Int, b: Int) {
 var a1: Int = null // 오류 발생
 var b1: Int? = null  // 정상, nullable
 ```
+
+## loop
+#### for loop
+```kotlin
+fun main (args: Array<String>) {
+    for (i in 0 .. 5) {
+        println("i : $i")
+    }
+
+    val items = listOf("apple", "banana", "kiwifruit")
+    for (item in items) {
+        println(item)
+    }
+
+    for (index in items.indices) {
+        println("item at $index is ${items[index]}")
+    }
+}
+```
+
+#### while loop
+```kotlin
+fun main (args: Array<String>) {
+    val items = listOf("apple", "banana", "kiwifruit")
+    var index = 0
+    while (index < items.size) {
+        println("item at $index is ${items[index]}")
+        index++
+    }
+}
+```
