@@ -38,7 +38,6 @@ RestHighLevelClient client = new RestHighLevelClient(
 );
 
 client.close();
-
 ```
 
 - try with resources
@@ -57,7 +56,45 @@ try (
 }
 ```
 
+#### id, password 가 설정되어 있을 경우
+```java
+CredentialsProvider credentialsProvider = new BasicCredentialsProvider();
+credentialsProvider.setCredentials(AuthScope.ANY, new UsernamePasswordCredentials("username", "password"));
+RestClientBuilder builder = RestClient.builder(new HttpHost("localhost", 9200, "http"))
+    .setHttpClientConfigCallback(
+        httpClientBuilder -> httpClientBuilder.setDefaultCredentialsProvider(credentialsProvider)
+    );
+
+try (
+    RestHighLevelClient client = new RestHighLevelClient(builder);
+) {
+
+} catch (IOException e) {
+    log.error(e.getMessage(), e);
+}
+```
+
+#### timeout 설정
+```java
+RestClientBuilder builder = RestClient.builder(new HttpHost("localhost", 9200))
+    .setRequestConfigCallback(
+        requestConfigBuilder -> requestConfigBuilder
+            .setConnectTimeout(5000)
+            .setSocketTimeout(60000)
+    );
+
+try (
+    RestHighLevelClient client = new RestHighLevelClient(builder);
+) {
+
+} catch (IOException e) {
+    log.error(e.getMessage(), e);
+}
+```
+
 ---
 ## 참고자료
 - https://www.elastic.co/guide/en/elasticsearch/client/java-rest/master/java-rest-high.html
+- v
+- https://www.elastic.co/guide/en/elasticsearch/client/java-rest/current/_timeouts.html
 
