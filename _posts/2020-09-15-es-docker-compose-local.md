@@ -4,7 +4,7 @@ title:  "docker-compose를 이용한 Local 개발용 ELK 세팅하기"
 date:   2020-09-15 09:00:00 +0900
 categories:
 - docker
-  tags:
+tags:
 - docker
 - elasticsearch
 - kibana
