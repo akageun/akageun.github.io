@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[GRPC] 2. Java 나 Spring 에서 GRPC 사용해보기."
-date: 2021-12-01 09:00:00 +0900
+date: 2021-12-01 10:00:00 +0900
 categories:
 - grpc
 tags:
