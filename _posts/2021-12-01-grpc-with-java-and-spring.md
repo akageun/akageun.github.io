@@ -10,6 +10,7 @@ tags:
 - idl
 - spring
 - java
+- armeria
 ---
 
 ## Java에서 사용해보기
