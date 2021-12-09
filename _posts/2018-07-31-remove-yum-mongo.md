@@ -3,9 +3,11 @@ layout: post
 title:  "yum으로 설치된 mongodb 삭제"
 date:   2018-07-31 09:00:00 +0900
 categories:
- - database
-tags: 
  - mongodb
+tags: 
+ - mongodb   
+ - database
+ - linux
 ---
 # 1. 사용중인 몽고 정지
 

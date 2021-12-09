@@ -7,6 +7,7 @@ categories:
 tags: 
  - spring
  - spring_batch
+ - enhance
 ---
 - 단순 Select 후 값을 변환하여 Insert 하는 Batch Job 개선하기
   - A 테이블에서 B 테이블로 Snapshot 데이터를 저장하는 배치 입니다.

@@ -3,9 +3,10 @@ layout: post
 title:  "[Mongo DB] robomongo 사용하기.(Mac)"
 date:   2016-08-11 09:00:00 +0900
 categories:
- - database
-tags: 
  - mongodb
+tags: 
+ - mongodb   
+ - database
  - nosql
 ---
 # 1. Download Link

@@ -3,9 +3,10 @@ layout: post
 title:  "mongodb install in centos 7"
 date:   2020-02-29 09:00:00 +0900
 categories:
- - database
+ - mongodb
 tags: 
- - mongo
+ - mongodb
+ - database
  - linux
 ---
 # mongodb install in centos 7
