@@ -26,6 +26,7 @@ public ItemReader<ContentData1> reader() {
 ```
 
 - 사용된 쿼리
+
 ```sql
 SELECT * FROM content_data_1
 ```
@@ -77,6 +78,7 @@ public ItemWriter<ContentData2> writer() {
 ```
 
 - 실행된 쿼리
+
 ```sql
 insert into content_data_2 (aaaa, bbbb, cccc) values (?, ?, ?)
 ```
@@ -85,8 +87,10 @@ insert into content_data_2 (aaaa, bbbb, cccc) values (?, ?, ?)
 - insert query를 묶어서 처리하도록 변경.
   - 쿼리를 많이 호출할 수록 성능은 느려짐.
     - 호출마다 오고가는 네트워크 비용... 대량일 경우 생각보다 크다.
+
 ### Spring Batch Code
 #### ItemWriter
+
 ```java
 @Bean
 @StepScope
@@ -101,6 +105,7 @@ public ItemWriter<ContentData2> writer() {
 ```
 
 - 변경된 쿼리
+
 ```sql
 insert into content_data_2 (aaaa, bbbb, cccc) values (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?) ...
 ```
@@ -109,13 +114,17 @@ insert into content_data_2 (aaaa, bbbb, cccc) values (?, ?, ?), (?, ?, ?), (?, ?
 - mysql 사용시에 설정값 확인 필요. : [공식문서](https://dev.mysql.com/doc/refman/8.0/en/packet-too-large.html)
   - mysql client에서 server로 요청을 보낼 때 사이즈 제한이 있음 : `max_allowed_packet`
   - 설정값 확인 : 기본값 1048576 bytes (1MB)
-``` show variables like ‘max_allowed_packet’; ```
 
-  - 설정값 수정 (해당 설정은 mysql 재시작시에 다시 기본값으로 돌아감)
+``` 
+show variables like ‘max_allowed_packet’; 
+```
+
+- 설정값 수정 (해당 설정은 mysql 재시작시에 다시 기본값으로 돌아감)
 ``` set global max_allowed_packet=1073741824 ```
 
 - 만약 pk 나 유니크 인덱스와 같이 `기존 값이 있을 경우...` 를 고려해야한다면, `INSERT ... ON DUPLICATE KEY UPDATE Statement` 를 고려해볼 수 있다.
   - https://dev.mysql.com/doc/refman/8.0/en/insert-on-duplicate.html
+
 ```sql
 insert into content_data_2 (aaaa, bbbb, cccc) values (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?) ... 
 ON DUPLICATE KEY UPDATE
@@ -129,6 +138,7 @@ ON DUPLICATE KEY UPDATE
 
 ## 2차 개선
 - Spring Batch 에서 제공하는 partition 을 사용하여 `병렬` 처리하도록 수정
+
 ### Spring Batch Code
 #### Partitioner
 - 전체 카운트를 조회해서 그걸 gridSize 만큼 나눈다.
