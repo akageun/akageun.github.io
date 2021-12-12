@@ -83,7 +83,9 @@ HEAD ${indexName}
 
 ###### 결과
 > 200 - OK
+
 - 없을 경우
+
 ```json
 {"statusCode":404,"error":"Not Found","message":"404 - Not Found"}
 ```
@@ -99,7 +101,9 @@ private void existIndex(RestHighLevelClient client, String indexName) throws IOE
 
 ## index open
 - 운영중인 index 의 경우 close 후에 설정을 변경 할 수 있다. 작업 완료 된 후 open 처리해주어야함.
+
 #### kibana dev tool
+
 ```
 POST /${indexName}/_open
 ```

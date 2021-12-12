@@ -119,6 +119,7 @@ rpc xxx(stream yyyRequest) returns (stream zzzResponse);
 - 모든 방식의 RPC 사용 가능
   
 - Java 에서 생성하는 법
+
 ```java 
 ServiceNameGrpc.newStub(Channel channel)
 ```
@@ -127,6 +128,7 @@ ServiceNameGrpc.newStub(Channel channel)
 - Unary RPC, Server Streaming RPC 만 사용가능
 
 - Java 에서 생성하는 법
+
 ```java 
 ServiceNameGrpc.newBlockingStub(Channel channel)
 ```
@@ -136,6 +138,7 @@ ServiceNameGrpc.newBlockingStub(Channel channel)
 - Unary RPC 만 사용 가능.
   
 - Java 에서 생성하는 법
+
 ```java 
 ServiceNameGrpc.newFutureStub(Channel channel)
 ```

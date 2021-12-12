@@ -21,12 +21,16 @@ git clone https://github.com/deviantony/docker-elk.git
 
 ## config 수정
 - `docker-elk` path로 이동필요
+
 > cd docker-elk
+
 - xpack 관련된 내용은 주석처리 필요
 
 #### elasticsearch
 - es config 파일 수정하기.
+
 > vi ./elasticsearch/config/elasticsearch.yml
+
 ```
 ## Default Elasticsearch configuration from Elasticsearch base image.
 ## https://github.com/elastic/elasticsearch/blob/master/distribution/docker/src/docker/config/elasticsearch.yml
@@ -41,14 +45,18 @@ network.host: 0.0.0.0
 ```
 
 - 안쓰는 비밀번호 제거하기
+
 > vi ./docker-compose.yml
+
 ```
 ## 제거
 ELASTIC_PASSWORD: changeme
 ```
 
 #### logstash
+
 > vi ./logstash/config/logstash.yml
+
 ```
 http.host: "0.0.0.0"
 #xpack.monitoring.elasticsearch.hosts: [ "http://elasticsearch:9200" ]
@@ -60,7 +68,9 @@ http.host: "0.0.0.0"
 ```
 
 #### kibana
+
 > vi ./kibana/config/kibana.yml
+
 ```
 server.name: kibana
 server.host: "0.0.0.0"
@@ -73,19 +83,23 @@ elasticsearch.hosts: [ "http://elasticsearch:9200" ]
 ```
 
 #### version 변경하는 법
+
 > vi .env
+
 ```
 ELK_VERSION=7.9.1
 ```
 
 ## 실행
 > docker-compose up -d
+
 ## 확인
 - Elasticsearch : 9200 / 9300
 - Kibana : 5601
 
 #### elasticsearch
 > curl -XGET 'http://localhost:9200/_cluster/health'
+
 #### kibana
 - 브라우저에서 `http://localhost:5601/` 를 호출해본다.
 
