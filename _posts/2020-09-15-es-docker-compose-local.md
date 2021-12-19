@@ -9,6 +9,8 @@ tags:
 - elasticsearch
 - kibana
 - logstash
+- docker-compose
+
 ---
 - 로컬에서 개발환경을 구축할 경우에 사용할 수 있도록 docker-compose를 사용하여, `elasticsearch`와 `kibana`를 세팅할 예정
 - n대를 띄우지 않고 싱글노드로도 충분히 테스트 할 수 있으므로, 한대를 띄우는 내용으로 작성함.

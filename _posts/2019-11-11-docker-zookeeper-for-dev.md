@@ -6,7 +6,8 @@ categories:
  - docker
 tags: 
  - docker
- - zookeeper
+ - zookeeper 
+ - docker-compose
 ---
 
 - 이전에 kafka를 사용하기 위해 zookeeper를 띄워본적은 있으나, 본격적으로 zookeeper를 사용해보기 위해 docker를 사용하여 local 개발환경을 구성해봄.

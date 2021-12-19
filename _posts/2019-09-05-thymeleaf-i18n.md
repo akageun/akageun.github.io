@@ -151,6 +151,7 @@ public class LocaleConfiguration implements WebMvcConfigurer {
 ## 사용해보기 - 1. Html 
 
 #### attribute 로 사용해보기
+
 ```html
 <h1 th:text="#{hello}"></h1>
 <hr>
@@ -181,6 +182,7 @@ public class LocaleConfiguration implements WebMvcConfigurer {
 ```
 
 - 소스보기로 본 내용(결과는 잘 나온다!);
+
 ```
 const hello = "\uC548\uB155\uD558\uC138\uC694!!";
 console.log(hello);
@@ -246,4 +248,3 @@ messageSourceAccessor with LocaleResolver : Hello!!
 ---
 ## 참고
 - https://github.com/akageun/spring-boot-sample/tree/master/thymeleaf-web
-- 
