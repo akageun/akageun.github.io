@@ -4,7 +4,10 @@
 
 
 ## how to run
-- 설치
+- 설치(Jekyll 설치)
+  
+> gem install jekyll bundle
+
 
 > bundle install
 

@@ -72,7 +72,9 @@ try {
 ```
 
 ## 전체소스
+
 ```java
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedList;
@@ -84,23 +86,24 @@ import lombok.extern.slf4j.Slf4j;
 public class SpringBatchChunk {
 
 	private static final int chunkSize = 3;
-	private static LinkedList<InputModel> itemForReader = new LinkedList<InputModel>() {{
-		add(new InputModel("java"));
-		add(new InputModel("javascript"));
-		add(new InputModel("typescript"));
-		add(new InputModel("python"));
-		add(new InputModel("go lang"));
-		add(new InputModel("swift"));
-		add(new InputModel("kotlin"));
-		add(new InputModel("c"));
-		add(new InputModel("c++"));
-		add(new InputModel("php"));
-		add(new InputModel("erlang"));
-		add(new InputModel("ruby"));
-		add(new InputModel("scala"));
-	}};
+	private LinkedList<InputModel> itemForReader = new LinkedList<>();
 
 	public static void main(String[] args) {
+		itemForReader.add(new InputModel("java"));
+		itemForReader.add(new InputModel("javascript"));
+		itemForReader.add(new InputModel("typescript"));
+		itemForReader.add(new InputModel("python"));
+		itemForReader.add(new InputModel("go lang"));
+		itemForReader.add(new InputModel("swift"));
+		itemForReader.add(new InputModel("kotlin"));
+		itemForReader.add(new InputModel("c"));
+		itemForReader.add(new InputModel("c++"));
+		itemForReader.add(new InputModel("php"));
+		itemForReader.add(new InputModel("erlang"));
+		itemForReader.add(new InputModel("ruby"));
+		itemForReader.add(new InputModel("scala"));
+	    
+	    
 		int readerCount = 0;
 		int writerCount = 0;
 
@@ -195,6 +198,4 @@ public class SpringBatchChunk {
 
 #### 실행 결과
 
-```
-SpringBatchChunk - readCount : 13, writerCount : 9
-```
+> SpringBatchChunk - readCount : 13, writerCount : 9
