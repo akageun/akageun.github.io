@@ -31,6 +31,9 @@ url:                 https://akageun.github.io
 baseurl:             ''
 paginate:            30
 
+share:
+    twitter_username: geunkr
+
 avatar_url: /assets/image/IMG_3426_new.jpg
 
 # About/contact

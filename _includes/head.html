@@ -23,11 +23,21 @@
 <meta name="naver-site-verification" content="6b2decc947bf16bd6238711648c6d0faf4bac47f" />
 <meta name="google-site-verification" content="gyik6agzBiz8ZqRdQTcEp1hYjbJPo9jOOXh8Q1K4Eh8" />
 <meta name="author" content="{{ site.author.name }}"/>
-<meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}"/>
+
+{% if page.title == "Home" %}
+<meta name="description" content="{{ site.description }}"/>
+{% elsif page.title %}
+<meta name="description" content="{{ page.title }}"/>
+{% else %}
+<meta name="description" content="{{ site.description }}"/>
+{% endif %}
+
 <meta name="keywords"
       content="{% if page.title %}{{ page.title }}, {{ site.title }}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}"/>
-
-{% if page.title %}
+{% if page.title == "Home" %}
+<meta content="{{ site.title }} &middot; {{ site.tagline }}" property="og:title">
+<meta content="website" property="og:type">
+{% elsif page.title %}
 <meta content="{{ page.title }}" property="og:title">
 <meta content="article" property="og:type">
 {% else %}
@@ -35,7 +45,9 @@
 <meta content="website" property="og:type">
 {% endif %}
 
-{% if page.description %}
+{% if page.title == "Home" %}
+<meta content="{{ site.description }}" property="og:description">
+{% elsif page.description %}
 <meta content="{{ page.description }}" property="og:description">
 {% else %}
 <meta content="{{ site.description }}" property="og:description">
@@ -72,7 +84,9 @@
 <meta name="twitter:site" content="@{{ site.share.twitter_username }}">
 <meta name="twitter:creator" content="@{{ site.share.twitter_username }}">
 
-{% if page.title %}
+{% if page.title == "Home" %}
+<meta name="twitter:title" content="{{ site.title }} &middot; {{ site.tagline }}">
+{% elsif page.title %}
 <meta name="twitter:title" content="{{ page.title }}">
 {% else %}
 <meta name="twitter:title" content="{{ site.title }}">
