@@ -83,6 +83,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@{{ site.share.twitter_username }}">
 <meta name="twitter:creator" content="@{{ site.share.twitter_username }}">
+<meta name="twitter:image" content="{{ site.url }}{{ site.avatar_url }}">
 
 {% if page.title == "Home" %}
 <meta name="twitter:title" content="{{ site.title }} &middot; {{ site.tagline }}">
@@ -102,9 +103,9 @@
 <meta name="twitter:description" content="{{ site.description }}">
 {% endif %}
 
-{% if page.header-img %}
-<meta name="twitter:image:src" content="{{ site.url }}/{{ page.header-img }}">
-{% endif %}
+<!--{% if page.header-img %}-->
+<!--<meta name="twitter:image:src" content="{{ site.url }}/{{ page.header-img }}">-->
+<!--{% endif %}-->
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 {% if site.google_analytics != null %}
