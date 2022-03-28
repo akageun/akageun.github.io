@@ -78,6 +78,7 @@ public CacheManager compositeCacheManager(
 - b, c 의 경우 개발 비용 뿐만 아니라, 서버 자원도 많이 사용되므로 a 안으로 가기로 함.
 
 - 아래와 같이 localCache 된 값을 가져와서 사용할 때, setter 를 통해 해당 값을 변경해 봄.
+
 ```java
 ContentEntity entity = contentService.find2(1L);
 log.info("entity : {}", entity);
@@ -88,6 +89,7 @@ log.info("entity : {}", entity);
 ```
 
 - `content` 내용이 변경된 entity 가 리턴되는 걸 확인할 수 있음.
+
 ```
 entity : ContentEntity(id=1, name=Name 1, content=Content 1)
 entity : ContentEntity(id=1, name=Name 1, content=test)
