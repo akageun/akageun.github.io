@@ -3,7 +3,7 @@ layout: post
 title: "Cache 를 적용하여 서비스 개선하는 방법..."
 date: 2022-02-01 01:00:00 +0900
 categories:
-- enhanced experience
+- enhanced-experience
 tags:
 - spring
 - cache
