@@ -6,7 +6,7 @@ categories:
  - spring
 tags: 
  - mongodb
- - spring_boot
+ - spring-boot
 ---
 
 # Spring Boot 에서 MongoDB CRUD 만들기!

@@ -6,7 +6,7 @@ categories:
 - kafka
 tags:
 - kafka
-- spring kafka
+- spring-kafka
 - experience
 ---
 ## 데이터 저장 일시

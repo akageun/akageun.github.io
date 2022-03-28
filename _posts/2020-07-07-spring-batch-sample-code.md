@@ -6,7 +6,7 @@ categories:
  - spring
 tags: 
  - spring
- - spring_batch
+ - spring-batch
 ---
 
 - Spring Batch 에서 `Tasklet`을 사용하지않고, ItemReader, ItemProceesor, ItemWriter 를 사용한 Chunk 개념을 손쉽게 이해하기 위해 간단하게 구현해본 소스

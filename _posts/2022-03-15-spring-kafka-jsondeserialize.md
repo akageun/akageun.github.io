@@ -6,7 +6,7 @@ categories:
 - kafka
 tags:
 - kafka
-- spring kafka
+- spring-kafka
 - experience
 ---
 - spring-kafka 를 사용해서 consumer 를 구축할 때, 아래와 같이 원하는 객체(TestV1DTO)로 바로를 사용하기 위해 `JsonDeserializer` 를 선언할 경우 리팩토링할 때 주의해야할 점이 있습니다.

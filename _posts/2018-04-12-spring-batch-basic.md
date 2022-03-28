@@ -6,7 +6,7 @@ categories:
  - spring
 tags: 
  - spring
- - spring_batch
+ - spring-batch
 ---
 # 1. Spring Batch
 ## 1) Spring batch란? 

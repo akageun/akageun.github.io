@@ -6,7 +6,7 @@ categories:
  - spring
 tags: 
  - mongodb
- - spring_boot
+ - spring-boot
 ---
 
 - Spring Boot 자동설정으로 mongo를 사용할 경우 _class 값이 저장되는 결과값에 추가 됨.

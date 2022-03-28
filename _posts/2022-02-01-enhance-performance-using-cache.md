@@ -7,7 +7,7 @@ categories:
 tags:
 - spring
 - cache
-- caffeine cache
+- caffeine-cache
 ---
 - 캐싱 전략이라던가 local cache, global cache 등에 대한 정보들은 많다.
 - 업무를 하면서 캐시를 적용하여 성능을 개선한다던가, 초기 캐시레이어를 도입할 때 고민했던 부분들에 대해서 정리해보았다.

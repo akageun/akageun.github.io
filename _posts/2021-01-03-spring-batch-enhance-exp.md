@@ -6,7 +6,7 @@ categories:
  - spring
 tags: 
  - spring
- - spring_batch
+ - spring-batch
  - enhance
 ---
 - 단순 Select 후 값을 변환하여 Insert 하는 Batch Job 개선하기

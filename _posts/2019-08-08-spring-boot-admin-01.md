@@ -6,7 +6,7 @@ categories:
  - spring
 tags: 
  - spring
- - spring_boot
+ - spring-boot
  - msa
 ---
 - 최근 msa 형태로 개발이 많이 진행되고, 각 서버에 들어가서 인스턴스 정보들을 확인하는 등 모니터링을 하는데, 번거로움이 크다.
