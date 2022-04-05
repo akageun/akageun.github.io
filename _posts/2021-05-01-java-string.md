@@ -13,15 +13,15 @@ tags:
 - Java 에서 문자열을 위한 클래스
 - 불변객체! (immutable)
 
-# String 다루기!
-## String 선언하기!
+# 1. String 다루기!
+## 1-1. String 선언하기!
 - 아래와 같이 선언해서 사용할 수 있다. 단, 두개는 큰 차이점을 가진다.(자세한 내용은 아래에서...)
 ```java
 String str1 = "test String"; //리터럴 방식
 String str2 = new String("test String"); // new 연산자를 이용한 선언
 ```
 
-## 문자열 합치기
+## 1-2. 문자열 합치기
 - `+` 연산자를 사용하여 합치자.
 ```java
 public class StringTest {
@@ -45,8 +45,8 @@ javac StringTest.java
 javap -v -p StringTest.java
 ```
 
-## 자주사용하는 method
-#### split
+## 1-3. 자주사용하는 method
+#### 1-3-1. split
 - 문자열을 정규식을 사용하여 특정 문자열 기준으로 분리해줌.
     - 주의할 점은 문자열이 정규식일 경우 `\`를 붙여줘야함.
 
@@ -55,21 +55,21 @@ public String[] split(String regex) {
 }
 ```
 
-#### equals
+#### 1-3-2. equals
 - 문자열 비교
 - `==` 으로 비교할 수 없는 문자열 비교
     - `==` 으로도 문자열을 비교할 수는 있음. (자세한 내용은 아래에서)
 
-#### charAt(index)
+#### 1-3-3. charAt(index)
 - index 에 해당하는 char 를 반환
 
 ....
 
-# 문자열 비교연산자(`==`)와 `equals` 차이
+# 2. 문자열 비교연산자(`==`)와 `equals` 차이
 - equals 는 문자열이 동일한지 확인
 - 비교연산자(`==`)는 object 가 동일한지 확인
 
-## equals
+## 2-1. equals
 - 모든 객체의 부모클래스인 Object 에 선언되어 있는 메소드
 
 ```java
@@ -118,7 +118,7 @@ public boolean equals(Object anObject) {
     }
 ```
 
-## `==`
+## 2-2. `==`
 - 참조 비교
 
 ```java
@@ -136,7 +136,7 @@ System.out.println(s1 == s3);
 
 - 같은 문자열임에도 `s1`, `s2`는 같은데, `s3` 는 다르다.
 
-# String Constant Pool
+# 3. String Constant Pool
 - 위에서 설명한 `String` 선언 방법 중 `literal` 을 사용하게 되면, `constant pool 영역` 을 사용하게 되고, `new String()` 을 할 경우에는 heap 영역을 사용하게 된다.
     - `literal`의 경우 `String Constants Pool`에 있는지 확인 -> 있으면 반환 -> 없을 경우 `String Constants Pool`에 할당한 후 반환
     - 그렇기 때문에 `==` 을 통해서 비교를 할 경우, 같은 주소값을 가지고 있기 때문에 `s1`, `s2` 의 비교 결과가 `true` 인 것이다.
@@ -148,7 +148,7 @@ System.out.println(s1 == s3);
     - PermGen 영역은 GC 대상이 아니였으나, Heap 영역으로 들어가면서 GC 대상이 됨.
     - 추가로 jdk 8 부터는 PermGen 영역이 Metaspace로 이름이 변경되고 고정크기에서 동적크기로 메모리 구성이 변경됨.
 
-## String Constant Pool 구조
+## 3-1. String Constant Pool 구조
 - HashTable 구조
 - 값을 hashing 하여 key로 사용
 - `StringTableSize`
@@ -156,10 +156,10 @@ System.out.println(s1 == s3);
     - `-XX:StringTableSize` 를 통해서 사이즈 변경 가능.
         - 사이즈는 소수를 사용해야 함. (http://java-performance.info/hashcode-method-performance-tuning/)
 
-# 왜 String은 immutable 일까?
+# 4. 왜 String은 immutable 일까?
 - immutable 이란? 객체가 생성되고 내부의 상태가 변하지 않고 계속 유지되는 객체를 말함. 말 그대로 한번 할당한 값은 변경할 수 없다.
 
-## 장점.
+## 4-1. 장점.
 - String 이 불변이기 때문에 `String Constants Pool`에서 String 을 관리할 수 있음.
     - 그렇기 때문에 메모리(Heap)를 절약할 수 있음.
         - 불변이 아니라면, 선언한 같은 문자열 String 이 계속 메모리에 할당되므로 비효율적일 수 있다.
@@ -172,7 +172,7 @@ System.out.println(s1 == s3);
     - 불변이기 때문에 캐싱하여 사용 가능
     - `Hash`시리즈(hashmap, hashtable, hashset) 에서 성능상 큰 이점을 볼 수 있다.
 
-## 단점
+## 4-2. 단점
 - 기존 String 을 수정하게 되면 그 전에 사용하던 String 객체는 GC 의 대상이 된다.
     - 변경이 많이 발생하게 되면 GC 대상이 많아짐...
     - 단점을 보완하기 위한 StringBuffer, StringBuilder 가 있음.
