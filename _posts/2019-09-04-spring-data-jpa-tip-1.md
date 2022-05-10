@@ -9,7 +9,6 @@ tags:
  - jpa
  - tip
  - java
- - enum
 ---
 
 - Spring data jpa 를 사용하면서 얻은 팁들을 정리한 문서

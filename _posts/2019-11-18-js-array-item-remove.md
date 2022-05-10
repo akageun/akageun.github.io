@@ -6,7 +6,6 @@ categories:
  - javascript
 tags: 
  - javascript
- - array
 ---
 - javascript에서 array 내 item을 제거해야할 경우 splice()를 사용할 수 있다.
 - 간단히 사용법을 알아보자

@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "docker를 이용한 zookeeper 개발환경 구축하기"
+title:  "docker 를 이용한 zookeeper 개발환경 구축하기"
 date:   2019-11-11 09:00:00 +0900
 categories:
+ - zookeeper
+tags:
+ - zookeeper   
  - docker
-tags: 
- - docker
- - zookeeper 
  - docker-compose
 ---
 
