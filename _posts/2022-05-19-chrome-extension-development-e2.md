@@ -81,6 +81,3 @@ chrome.runtime.onInstalled.addListener(() => {
 
 ## icon
 - 사이즈 별로 입력해서 assets 와 같은 폴더를 생성하여 추가하면 끝!
-
----
-- 기본적인 내용들만 적어
