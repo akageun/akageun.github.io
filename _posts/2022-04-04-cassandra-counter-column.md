@@ -23,6 +23,7 @@ tags:
 - 테스트용 테이블
   - service_id : partitionKey
   - content_id, episode_id : clusteringKey
+  
 ```sql
 CREATE TABLE cass_counter_test (
   service_id text,
@@ -69,6 +70,7 @@ and episode_id = ?
 - Random Bulk Get
   - 만약 multi-column 으로 조회할 경우에는 제약사항이 있으니 참고!
   - Multi-column relations can only be applied to clustering columns but was applied to: partition_key
+  
 ```sql
 SELECT * FROM cass_counter_test
 WHERE service_id= ?
