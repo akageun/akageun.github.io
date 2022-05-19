@@ -1,5 +1,6 @@
 ---
-layout: post title:  "[Chrome Extension 개발기] 3. 사용했던 API 들 "
+layout: post 
+title:  "[Chrome Extension 개발기] 3. 사용했던 API 들 "
 date:   2022-05-19 09:00:00 +0900
 categories:
 - project-series 
