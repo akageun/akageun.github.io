@@ -12,11 +12,8 @@ layout: default
             <p class="blog-post-meta">
                 {{ page.date | date_to_string }}
 
-                {% if page.tags %}
-                {% for tag in page.tags %}
-                <span class="badge badge-pill badge-primary">{{ tag }}</span>
-                {% endfor %}
-                {% endif %}
+                {% include category.html %}
+                {% include tag.html %}
 
             </p>
 
