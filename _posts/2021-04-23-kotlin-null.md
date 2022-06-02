@@ -52,6 +52,7 @@ if (str != null) {
 
 - 앨비스 연산자를 잘 섞어 사용하면 좋음
   - str 이 null 이 아니면 `UpperCase` 를 하고, null 일 경우에는 `EMPTY STRING` 을 리턴한다.
+  
 ```kotlin
 str?.toUpperCase() ?: "EMPTY STRING"
 ```

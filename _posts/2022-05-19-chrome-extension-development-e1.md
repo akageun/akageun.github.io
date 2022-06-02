@@ -3,7 +3,7 @@ layout: post
 title:  "[Chrome Extension 개발기] 1. 왜? 크롬 익스텐션을 사용해서 개발했어?"
 date:   2022-05-19 09:00:00 +0900
 categories:
-- project-series
+- project
 tags:
 - chrome
 - chrome-extension

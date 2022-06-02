@@ -3,11 +3,10 @@ layout: post
 title:  "[Chrome Extension 개발기] 3. 사용했던 API 들 "
 date:   2022-05-19 09:00:00 +0900
 categories:
-- project-series 
+- project 
 tags:
 - chrome
 - chrome-extension
-
 ---
 - 최대한 빠르게 `URL` 을 찾기 위해 방법을 찾아봤다.
 

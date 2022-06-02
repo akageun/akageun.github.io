@@ -3,7 +3,7 @@ layout: post
 title:  "[Chrome Extension 개발기] 2. extension 기본"
 date:   2022-05-19 09:00:00 +0900
 categories:
-- project-series
+- project
 tags:
 - chrome
 - chrome-extension

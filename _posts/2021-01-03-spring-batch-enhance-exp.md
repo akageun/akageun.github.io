@@ -3,7 +3,7 @@ layout: post
 title:  "[Spring Batch] spring batch 성능 개선하기(경험 공유)"
 date:   2021-01-03 09:00:00 +0900
 categories:
- - spring
+ - enhanced-experience
 tags: 
  - spring
  - spring-batch
