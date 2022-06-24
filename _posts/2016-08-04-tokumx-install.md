@@ -3,7 +3,7 @@ layout: post
 title:  "Mongo 설치하기(Tokumx 설치하기)"
 date:   2016-08-04 09:00:00 +0900
 categories:
- - mongodb
+ - database
 tags: 
  - mongodb   
  - database

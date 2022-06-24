@@ -3,7 +3,7 @@ layout: post
 title:  "Jenkins Install on Centos(yum Install)"
 date:   2016-08-05 09:00:00 +0900
 categories:
- - jenkins
+ - tools
 tags: 
  - centos
  - linux

@@ -24,6 +24,7 @@ tags:
 
 ## 의존성 주입 방법
 - Construct Injection
+
 ```java
 @Service
 public class TestA {
@@ -37,6 +38,7 @@ public class TestA {
 ```
 
 - Field Injection
+
 ```java
 @Service
 public class TestB {
@@ -48,6 +50,7 @@ public class TestB {
 ```
 
 - Setter Injection
+
 ```java
 @Service
 public class TestC {
@@ -62,6 +65,7 @@ public class TestC {
 
 ### 권장하는 방법
 - `Construct injection` 방식을 권장한다.
+
 ##### 순환참조...
 - field injection 이나 setter injection 의 경우, 객체를 생성하는 시점에 순환참조가 일어나는지 알 수가 없다.
 - `TestB`, `TestC` 두개를 Construct injection 으로 변경하여 테스트 하였다.
@@ -87,6 +91,7 @@ public class TestC {
     }
 }
 ```
+
 ```
 ***************************
 APPLICATION FAILED TO START
