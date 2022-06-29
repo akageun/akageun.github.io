@@ -3,8 +3,9 @@ layout: post
 title:  "[AWS] SCP로 EC2에서 파일/폴더 가져오기"
 date:   2018-01-18 09:00:00 +0900
 categories:
- - aws
+ - cloud
 tags: 
+ - aws  
  - scp
  - linux
  - ec2

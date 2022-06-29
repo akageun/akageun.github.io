@@ -3,8 +3,9 @@ layout: post
 title:  "[S3] 특정 IP만 사용 가능하도록 설정하는 법"
 date:   2018-06-19 09:00:00 +0900
 categories:
+ - cloud
+tags:
  - aws
-tags: 
  - s3
 ---
 # 1. S3 버킷 설정

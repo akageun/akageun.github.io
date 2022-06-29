@@ -3,7 +3,7 @@ layout: post
 title:  "[Intelli J] NodeMon 설정하기 (Mac OS)"
 date:   2016-08-05 09:00:00 +0900
 categories:
- - node
+ - tools
 tags: 
  - javascript
 ---

@@ -3,8 +3,9 @@ layout: post
 title:  "[AWS S3] s3fs 설치하기(Centos)"
 date:   2016-08-17 09:00:00 +0900
 categories:
- - aws
+ - cloud
 tags: 
+ - aws
  - s3
 ---
 

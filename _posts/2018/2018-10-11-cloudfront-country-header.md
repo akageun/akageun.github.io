@@ -3,8 +3,9 @@ layout: post
 title:  "CloudFront Header 내 국가코드 관련"
 date:   2018-10-11 09:00:00 +0900
 categories:
- - aws
+ - cloud
 tags: 
+ - aws  
  - cloudfront
 ---
 #### java

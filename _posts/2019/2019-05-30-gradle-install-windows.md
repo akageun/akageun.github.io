@@ -3,7 +3,7 @@ layout: post
 title:  "how to install gradle on windows"
 date:   2019-05-30 09:00:00 +0900
 categories:
- - gradle
+ - tools
 tags:
  - gradle
  - java
