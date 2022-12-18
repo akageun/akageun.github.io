@@ -59,7 +59,7 @@ public class TestRequest {
 }
 ```
 
-```http request
+```http
 POST http://localhost:9999/test/validation
 Content-Type: application/json
 
