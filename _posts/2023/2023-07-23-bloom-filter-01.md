@@ -37,21 +37,34 @@ implementation 'com.google.guava:guava:32.1.1-jre'
 import com.google.common.hash.BloomFilter;
 import com.google.common.hash.Funnels;
 
-@Test
-void bloomFilter(){
-    BloomFilter<String> bloomFilter=BloomFilter.create(Funnels.stringFunnel(StandardCharsets.UTF_8),100,0.1);
+  public static void main(String[] args) {
+        int expectedInsertions = 1000;
+        double falsePositiveRate = 0.01;
 
-    bloomFilter.put("1");
-    bloomFilter.put("2");
-    bloomFilter.put("3");
-    bloomFilter.put("4");
-    bloomFilter.put("5");
+        // Bloom 필터 생성
+        BloomFilter<String> bloomFilter = BloomFilter.create(Funnels.unencodedCharsFunnel(), expectedInsertions, falsePositiveRate);
 
-    log.info("check : {}, {}, {}",
-    bloomFilter.mightContain("1"),
-    bloomFilter.mightContain("5"),
-    bloomFilter.mightContain("7"));
-}
+        // 문자열 추가
+        String value1 = "example1";
+        String value2 = "example2";
+        bloomFilter.put(value1);
+        bloomFilter.put(value2);
+
+        // 문자열 멤버십 확인
+        String queryValue = "example1";
+        if (bloomFilter.mightContain(queryValue)) {
+        System.out.println("Bloom 필터가 " + queryValue + "을(를) 포함할 수 있습니다.");
+        } else {
+        System.out.println("Bloom 필터가 " + queryValue + "을(를) 포함하지 않습니다.");
+        }
+
+        queryValue = "example3";
+        if (bloomFilter.mightContain(queryValue)) {
+        System.out.println("Bloom 필터가 " + queryValue + "을(를) 포함할 수 있습니다.");
+        } else {
+        System.out.println("Bloom 필터가 " + queryValue + "을(를) 포함하지 않습니다.");
+        }
+  }
 ```
 
 - result
