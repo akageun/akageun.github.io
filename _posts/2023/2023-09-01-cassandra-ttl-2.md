@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "기존 Cassandra table 에 TTL 을 추가하면 어떻게 될까?"
-date:   2019-07-02 09:00:00 +0900
+date:   2023-09-01 09:00:00 +0900
 categories:
 - database
 tags:
