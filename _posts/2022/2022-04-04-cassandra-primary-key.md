@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Cassandra Primary Key"
+title:  "[Cassandra] Primary Key"
 date:   2022-04-04 09:00:00 +0900
 categories:
 - database

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Cassandra CQL 추적하기"
+title:  "[Cassandra] CQL 추적하기"
 date:   2019-07-17 09:00:00 +0900
 categories:
  - database

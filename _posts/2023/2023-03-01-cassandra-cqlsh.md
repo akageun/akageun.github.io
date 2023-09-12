@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Cassandra CQLSH 사용하기"
+title:  "[Cassandra] CQLSH 사용하기"
 date:   2023-03-01 09:00:00 +0900
 categories:
 - database
@@ -9,6 +9,7 @@ tags:
 ---
 
 - 카산드라 설치한 곳에서 아래와 같이 사용 가능함.
+- https://docs.datastax.com/en/archived/cql/3.3/cql/cql_reference/cqlsh.html
 
 ``` ./bin/cqlsh ```
 
@@ -29,3 +30,7 @@ tags:
 > Consistency level set to QUORUM.
 
 
+## 수행시간이 긴 쿼리를 수행할 때
+- default 10s
+
+> cqlsh --request-timeout=3600

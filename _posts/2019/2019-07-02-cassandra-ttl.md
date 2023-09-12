@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "cassandra ttl 설정하기"
+title:  "[Cassandra] ttl 설정하기"
 date:   2019-07-02 09:00:00 +0900
 categories:
  - database
