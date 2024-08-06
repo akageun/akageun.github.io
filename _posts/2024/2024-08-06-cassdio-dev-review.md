@@ -106,6 +106,10 @@ tags:
 
 ![image](https://github.com/user-attachments/assets/e3736d70-fd70-4280-830a-31f95d4ea04d)
 
+## Readme 꾸미기
+- 스크린샷 제작 : https://ezgif.com/
+- icon 제작 : https://www.canva.com/create/icons/
+
 ## 결론
 - 불편한걸 어떻게 하면 해소할 수 있을까를 고민했고,
 - 목표를 설정하고, milestone 을 나눠서, 첫 버전을 명확하게 만들었다.
