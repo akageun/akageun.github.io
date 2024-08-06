@@ -104,7 +104,7 @@ tags:
 - docker compose 를 이용하여 test case 를 각 버전별 cassandra cluster 에 요청하여 지원하는지를 검증!
     - CI 를 강화하여 Unit Test 부터 Integ Test 까지 보강해나갈 예정.
 
-![image](https://github.com/user-attachments/assets/e3736d70-fd70-4280-830a-31f95d4ea04d)
+![image](/assets/postimage/img.png)
 
 ## Readme 꾸미기
 - 스크린샷 제작 : https://ezgif.com/
