@@ -3,11 +3,11 @@ layout: post
 title:  "[Spring Webflux] 1. Spring webflux 맛보기"
 date:   2019-06-23 09:00:00 +0900
 categories:
- - spring
+- spring
 tags: 
- - spring
- - webflux
- - reactive
+- spring
+- spring-webflux
+- reactive
 ---
 # Spring webflux 맛보기
 - https://docs.spring.io/spring/docs/5.0.0.BUILD-SNAPSHOT/spring-framework-reference/html/images/webflux-overview.png

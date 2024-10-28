@@ -3,11 +3,11 @@ layout: post
 title:  "[Spring Webflux] 2. Mono and Flux"
 date:   2019-06-23 09:00:00 +0900
 categories:
- - spring
+- spring
 tags: 
- - spring
- - webflux
- - reactive
+- spring
+- spring-webflux
+- reactive
 ---
 # Mono and Flux
 - **org.reactivestreams.Publisher**의 구현체

@@ -3,12 +3,12 @@ layout: post
 title:  "[Webflux Tip] 1. WebTestClient timeout"
 date:   2019-06-23 09:00:00 +0900
 categories:
- - spring
+- spring
 tags: 
- - spring
- - webflux
- - reactive
- - tip
+- spring
+- spring-webflux
+- reactive
+- tip
 ---
 
 # [Webflux Tip] 1. WebTestClient timeout

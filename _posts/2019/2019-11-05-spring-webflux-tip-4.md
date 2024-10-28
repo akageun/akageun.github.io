@@ -3,11 +3,11 @@ layout: post
 title:  "[Webflux Tip] 4. webflux .map()에 null을 리턴하게 될 경우..."
 date:   2019-11-05 09:00:00 +0900
 categories:
- - spring
+- spring
 tags: 
- - webflux
- - reactive
- - tip
+- spring-webflux
+- reactive
+- tip
 ---
 
 - Webflux를 사용해서 개발하던 중 어처구니 없는 에러가 발생했다.

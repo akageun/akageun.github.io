@@ -3,12 +3,12 @@ layout: post
 title:  "[Spring Webflux] 5. WebFlux + Cassandra 사용해보기"
 date:   2019-06-23 09:00:00 +0900
 categories:
- - spring
+- spring
 tags: 
- - spring
- - webflux
- - reactive
- - cassandra
+- spring
+- spring-webflux
+- reactive
+- cassandra
 ---
 # Webflux Cassandra
 

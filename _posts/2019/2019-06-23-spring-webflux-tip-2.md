@@ -3,13 +3,13 @@ layout: post
 title:  "[Webflux Tip] 2. WebClient 설정(connection pool, timeout)"
 date:   2019-06-23 09:00:00 +0900
 categories:
- - spring
+- spring
 tags: 
- - spring
- - webflux
- - reactive
- - tip
- - webclient
+- spring
+- spring-webflux
+- reactive
+- tip
+- webclient
 ---
 
 # WebClient 설정(connection pool, timeout)
