@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Netty Base 로 이용할 경우, URL 길이 제한 문제 해결 방법"
+title:  "MongoDB Compression"
 date:   2024-10-24 09:00:00 +0900
 categories:
 - database
