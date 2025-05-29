@@ -25,6 +25,7 @@ tags:
 - `help`
   - 어떤 명령어들을 실행할 수 있는지? 어떻게 이용 가능한지 알려준다.
   - `ollama help
+
 ```
 Large language model runner
 
@@ -50,6 +51,7 @@ Flags:
   -h, --help      help for ollama
   -v, --version   Show version information
 ```
+
 - `chat` 과 `generate` 의 기능
   - 입력한 내용에 대해서 텍스트를 생성에 대한 공통의 기능을 가지고 있습니다.
   - `chat` 은 이전 대화내용을 이용하여 다음 답변을 이어가는 형태로 텍스트를 생성합니다. (챗봇)
