@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<header class="page-header category-page-header">
+    <a class="back-link" href="{{ '/archive/' | relative_url }}">← 전체 연도</a>
+    <span class="section-kicker">ARCHIVE</span>
+    <h1>{{ page.year }}</h1>
+    <p>{{ page.posts | size }}개의 글</p>
+</header>
+
+<div class="row g-5">
+    <div class="col-lg-8">
+        <div class="category-post-list">
+            {% for post in page.posts %}
+            <article class="category-post-item">
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%m월 %d일" }}</time>
+                <div class="post-title-row">
+                    {% include post_list_categories.html %}
+                    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+                </div>
+                <p>{{ post.excerpt | strip_html | truncatewords: 24, '...' }}</p>
+                {% include post_list_tags.html %}
+                <a class="read-more" href="{{ post.url | relative_url }}" aria-label="{{ post.title }} 읽기">글 읽기 <span aria-hidden="true">→</span></a>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="col-lg-4">{% include page_side_bar.html %}</div>
+</div>

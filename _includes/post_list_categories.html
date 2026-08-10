@@ -1,0 +1,9 @@
+{% if post.categories.size > 0 %}
+<div class="post-list-categories" aria-label="카테고리">
+    {% for category in post.categories %}
+    {% assign category_slug = category | slugify %}
+    {% capture category_url %}/{{ site.category_dir }}{{ category_slug }}/{% endcapture %}
+    <a class="badge category-badge" href="{{ category_url | relative_url }}">{{ category }}</a>
+    {% endfor %}
+</div>
+{% endif %}

@@ -2,11 +2,11 @@
 {% capture categories %}
 {% if post %}
 {% for category in post.categories %}
-<a class="badge badge-success" href="{{ root_url }}/{{ site.category_dir }}#{{ category }}" title="Category: {{ category }}" rel="category">{{ category | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
+{% assign category_slug = category | slugify %}{% capture category_url %}/{{ site.category_dir }}{{ category_slug }}/{% endcapture %}<a class="badge category-badge" href="{{ category_url | relative_url }}" title="Category: {{ category }}" rel="category">{{ category | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
 {% endfor %}
 {% else %}
 {% for category in page.categories %}
-<a class="badge badge-success" href="{{ root_url }}/{{ site.category_dir }}#{{ category }}" title="Category: {{ category }}" rel="category">{{ category | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
+{% assign category_slug = category | slugify %}{% capture category_url %}/{{ site.category_dir }}{{ category_slug }}/{% endcapture %}<a class="badge category-badge" href="{{ category_url | relative_url }}" title="Category: {{ category }}" rel="category">{{ category | join: "/" }}</a>{% unless forloop.last %}&nbsp;{% endunless %}
 {% endfor %}
 {% endif %}
 {% endcapture %}

@@ -1,0 +1,10 @@
+{% if post.tags.size > 0 %}
+<div class="post-list-tags" aria-label="태그">
+    <span class="tag-list-label">Tags</span>
+    {% for tag in post.tags %}
+    {% assign tag_slug = tag | slugify %}
+    {% capture tag_url %}/{{ site.tag_dir }}{{ tag_slug }}/{% endcapture %}
+    <a class="badge tag-badge" href="{{ tag_url | relative_url }}">#{{ tag }}</a>
+    {% endfor %}
+</div>
+{% endif %}

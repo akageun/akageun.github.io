@@ -1,17 +1,21 @@
-<header class="blog-header py-3">
-    <div class="row flex-nowrap justify-content-between align-items-center">
-        <div class="col-12 text-center">
-            <a class="blog-header-logo text-dark" href="/">{{ site.title }}</a>
+<nav class="navbar navbar-expand-lg navbar-light" aria-label="주요 메뉴">
+    <div class="container">
+        <a class="navbar-brand" href="{{ '/' | relative_url }}">
+            <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+            <span>{{ site.title }}</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#blogNav"
+                aria-controls="blogNav" aria-expanded="false" aria-label="메뉴 열기">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="blogNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                <li class="nav-item"><a class="nav-link" href="{{ '/' | relative_url }}">Posts</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ '/category/' | relative_url }}">Categories</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ '/tag/' | relative_url }}">Tags</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ '/archive/' | relative_url }}">Archive</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ '/about/' | relative_url }}">About</a></li>
+            </ul>
         </div>
     </div>
-</header>
-
-<div class="nav-scroller py-1 mb-2">
-    <nav class="nav d-flex justify-content-between">
-        <a class="p-2 text-muted" href="/">Posts</a>
-        <a class="p-2 text-muted" href="/category">Category</a>
-        <a class="p-2 text-muted" href="/tag">Tags</a>
-        <a class="p-2 text-muted" href="/archive">Archive</a>
-        <a class="p-2 text-muted" href="/about">About</a>
-    </nav>
-</div>
+</nav>

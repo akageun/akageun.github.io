@@ -1,6 +1,17 @@
-<aside class="col-md-3 blog-sidebar">
-    <div class="p-4">
-        <h4 class="font-italic">Tags</h4>
+<aside class="blog-sidebar sticky-lg-top">
+    <section class="sidebar-card profile-card">
+        <img src="{{ site.avatar_url | relative_url }}" alt="{{ site.author.name }} 프로필" width="72" height="72">
+        <div>
+            <span class="sidebar-label">ABOUT</span>
+            <h2>{{ site.author.name }}</h2>
+            <p>{{ site.tagline }}</p>
+        </div>
+    </section>
+    <section class="sidebar-card">
+        <div class="sidebar-heading">
+            <span class="sidebar-label">TOPICS</span>
+            <h2>Tags</h2>
+        </div>
 
         <div class="tags-cloud">
             <div>
@@ -37,11 +48,9 @@
                 {% else %}
                 {% assign color = 8 | minus: base %}
                 {% endif %}
-                <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag[0] }}"
-                   style="font-size: {{ size }}pt; color: #{{ 9 | minus: color }}{{ 9 | minus: color }}{{ 9 | minus: color }};">{{
-                    tag[0] }}</a>
+                <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag[0] }}">#{{ tag[0] }}</a>
                 {% endfor %}
             </div>
         </div>
-    </div>
+    </section>
 </aside><!-- /.blog-sidebar -->

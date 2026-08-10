@@ -3,17 +3,21 @@
 <head>
     {% include head.html %}
 </head>
-<body>
-
-<div class="container">
+<body class="d-flex flex-column min-vh-100">
+<header class="site-header sticky-top">
     {% include header.html %}
-</div>
+</header>
 
-<main role="main" class="container">
+<main role="main" class="container site-main flex-grow-1">
     {{ content }}
 </main>
 
+<footer class="site-footer mt-auto">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0">&copy; {{ 'now' | date: '%Y' }} {{ site.author.name }}. 기록하고 공유하는 개발 블로그.</p>
+        <a href="{{ '/atom.xml' | relative_url }}">RSS 구독</a>
+    </div>
+</footer>
 {% include head_2.html %}
 </body>
 </html>
-

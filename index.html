@@ -3,31 +3,39 @@ layout: default
 title: Home
 ---
 
-<div class="row">
-    <div class="col-md-9 blog-main">
-        <h3 class="pb-4 mb-4 font-italic border-bottom">
-            Blog Posts
-        </h3>
+<section class="blog-hero">
+    <span class="hero-kicker">BACKEND · DATA · DEVLOG</span>
+    <h1>오늘 배운 것을<br class="d-none d-md-block"> 내일의 지식으로.</h1>
+    <p>{{ site.description }} 개발 과정에서 만난 문제와 해결 경험을 차곡차곡 기록합니다.</p>
+</section>
+
+<div class="row g-5">
+    <div class="col-lg-8 blog-main">
+        <div class="section-heading">
+            <div>
+                <span class="section-kicker">LATEST WRITINGS</span>
+                <h2>최근 글</h2>
+            </div>
+        </div>
 
         {% for post in paginator.posts %}
-        <div class="blog-post">
-            <h3 class="blog-post-title">
-                <a href="{{ post.url }}">{{ post.title }}</a></h3>
-            <p class="blog-post-meta">
-                {{ post.date | date_to_string }}
-
-                {% include category.html %}
-                {% include tag.html %}
-
-            </p>
-
-            <a href="{{ post.url }}">{{ post.excerpt | strip_html | truncatewords: 25, '...' }}</a>
-        </div>
+        <article class="post-card">
+            <div class="post-card-meta">
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+            </div>
+            <div class="post-title-row">
+                {% include post_list_categories.html %}
+                <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            </div>
+            <p>{{ post.excerpt | strip_html | truncatewords: 28, '...' }}</p>
+            {% include post_list_tags.html %}
+            <a class="read-more" href="{{ post.url | relative_url }}" aria-label="{{ post.title }} 읽기">글 읽기 <span aria-hidden="true">→</span></a>
+        </article>
         {% endfor %}
 
         {% include paginate.html %}
 
     </div>
 
-    {% include page_side_bar.html %}
+    <div class="col-lg-4">{% include page_side_bar.html %}</div>
 </div>

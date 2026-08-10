@@ -1,33 +1,33 @@
 ---
 layout: default
 ---
-<div class="row">
-    <div class="col-md-9 blog-main">
+<div class="row g-5">
+    <div class="col-lg-8 blog-main">
         {% include adsbygoogle.html %}
 
-        <div class="blog-post">
-            <h3 class="blog-post-title">
-                {{ page.title }}
-            </h3>
-            <p class="blog-post-meta">
-                {{ page.date | date_to_string }}
-
+        <article class="blog-post">
+            <header class="post-header">
+                <p class="post-eyebrow">ARTICLE</p>
+                <h1 class="blog-post-title">{{ page.title }}</h1>
+                <div class="blog-post-meta">
+                    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y년 %m월 %d일" }}</time>
+                    <span aria-hidden="true">·</span>
+                    <span>{{ site.author.name }}</span>
+                </div>
+                <div class="post-taxonomy">
                 {% include category.html %}
                 {% include tag.html %}
+                </div>
+            </header>
 
-            </p>
+            <div id="content" class="post-content">{{ content }}</div>
 
-            {{ content }}
-
-            <br>
-
-            {% include related_posts.html %}
+            <section class="related-section">{% include related_posts.html %}</section>
 
             {% include disqus.html %}
-        </div>
+        </article>
 
     </div>
 
-    {% include post_side_bar.html %}
+    <div class="col-lg-4">{% include post_side_bar.html %}</div>
 </div>
-

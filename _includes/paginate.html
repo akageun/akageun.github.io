@@ -1,12 +1,11 @@
-<div class="blog-pagination">
+<nav class="blog-pagination" aria-label="글 목록 페이지">
     {% if paginator.previous_page %}
-    <a class="btn btn-outline-primary"
-       href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Previous</a>
+    <a class="btn btn-outline-primary rounded-pill"
+       href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">← 이전 페이지</a>
     {% endif %}
 
     {% if paginator.next_page %}
-    <a class="btn btn-outline-primary"
-       href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" tabindex="-1"
-       aria-disabled="true">Next</a>
+    <a class="btn btn-primary rounded-pill"
+       href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">다음 페이지 →</a>
     {% endif %}
-</div>
+</nav>
